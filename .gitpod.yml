@@ -4,6 +4,7 @@ tasks:
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
       pip install Django
+      pip install dj_database_url psycopg2 gunicorn
       python manage.py migrate
   - command: |
       source venv/bin/activate
