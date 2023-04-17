@@ -32,9 +32,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 '8000-ocimar84-holidays-ylydvl2qubv.ws-us94.gitpod.io']
+                 'gitpod.io']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io']
 
 COMPRESS_ROOT = os.path.join(BASE_DIR, 'holidays', 'static')
 
