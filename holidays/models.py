@@ -22,6 +22,8 @@ class TimeOff(models.Model):
     start_date = models.DateTimeField("holiday start")
     end_date = models.DateTimeField("holiday end")
     hours = models.IntegerField(default=0)
+    reason_text = models.CharField(max_length=2000, null=True)
+    status_text = models.CharField(max_length=200, default="pending")
 
     def __str__(self):
         return self.id

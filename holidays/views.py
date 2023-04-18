@@ -12,9 +12,9 @@ def show(request):
 def index(request):
     """View function for home page of site."""
 
-    departments = Department.objects.all()
-    employees = Employee.objects.all()
-    time_offs = TimeOff.objects.all()
+    departments = Department.objects.all().order_by('name_text').values()
+    employees = Employee.objects.all().order_by('name_text').values()
+    time_offs = TimeOff.objects.all().order_by('start_date').values()
     # time_offs = TimeOff.objects.filter(status__exact='approved')
 
     context = {
