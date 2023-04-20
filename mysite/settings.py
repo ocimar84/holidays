@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 'gitpod.io', 'herokuapp.com']
+                 'gitpod.io', 'holidays-ocimar.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1',
                         'https://*.gitpod.io', 'https://*.herokuapp.com']
