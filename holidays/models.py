@@ -26,4 +26,4 @@ class TimeOff(models.Model):
     status_text = models.CharField(max_length=200, default="pending")
 
     def __str__(self):
-        return self.id
+        return f'{self.id}'
