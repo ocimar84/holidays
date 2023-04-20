@@ -43,12 +43,6 @@ else:
 CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1',
                         'https://*.gitpod.io', 'https://*.herokuapp.com']
 
-# COMPRESS_ROOT = os.path.join(BASE_DIR, 'holidays', 'static')
-
-# COMPRESS_ENABLED = True
-
-# STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -59,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'compressor',
 ]
 
 MIDDLEWARE = [

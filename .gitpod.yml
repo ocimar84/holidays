@@ -1,15 +1,22 @@
 tasks:
-  - init: |
+  - name: Web Server
+    init: |
       python -m venv venv
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
       pip install Django
-      pip install dj_database_url psycopg2 django-compressor whitenoise gunicorn
+      pip install dj_database_url psycopg2 whitenoise gunicorn
       npm install
       python manage.py migrate
-  - command: |
+    command: |
       source venv/bin/activate
       python manage.py runserver
+  - name: Dev Build
+    init: |
+      source venv/bin/activate
+      npm install
+    command: |
+      source venv/bin/activate
       npm run dev
   
 ports:
