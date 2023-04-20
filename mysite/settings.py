@@ -32,9 +32,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost',
-                 'gitpod.io']
+                 'gitpod.io', 'herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'https://*.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1',
+                        'https://*.gitpod.io', 'https://*.herokuapp.com']
 
 # COMPRESS_ROOT = os.path.join(BASE_DIR, 'holidays', 'static')
 
