@@ -16,7 +16,7 @@ def create(request):
     start_date = datetime.strptime(request.POST["start_date"], format)
     end_date = datetime.strptime(request.POST["end_date"], format)
     hours = (end_date - start_date).days * 8
-    status_text = 'approved'
+    status_text = 'requested'
 
     employee = get_object_or_404(Employee, pk=employee_id)
     time_off = TimeOff(employee=employee, reason_text=reason_text, start_date=start_date,
