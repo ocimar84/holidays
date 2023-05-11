@@ -1,942 +1,704 @@
-# OVERVIEW
-
-This template was made as a guide to help ensure you cover assessment criteria in your fourth portfolio write up. It is specific to the **PORTFOLIO 4: Full-Stack Toolkit** project.
-
-There still is not an official readme example for this Project Provided by CI.
-
-Sections marked as 🚨**Required** and 🚀 **merit & beyond**
-
-**Please note** that project assessment criteria changes more often than these guides are updated so double-check the submission criteria before assuming the 🚨**Required** is all you have to do to pass.
-
-## Helpful tools
-
-### PDB Debugging
-
-Here’s a [cheatsheet](https://kapeli.com/cheat_sheets/Python_Debugger.docset/Contents/Resources/Documents/index) on how to navigate into functions and to the next line using pdb.
-
-This video shows you how to set a trace and then use the print() to evaluate variables
-
-https://user-images.githubusercontent.com/23039742/212526614-f3d19b8a-6841-43d4-a527-bfb6da95e0ad.mp4
-
-### Screenshots and Videos
-
-**Here’s a great video on how to add videos to your readme! no need to convert to gifs!!**
-
-https://www.youtube.com/watch?v=G3Cytlicv8Y
-
-> 1. record a video via slack
-> 2. download it
-> 3. in github, edit your readme via the pencil icon
-> 4. type a place holder word and highlight it
-> 5. drag and drop mp4 file over that text
-> 6. scroll down to the commit area
-> 7. update the default commit message
-> 8. click the green button
-> 9. `git pull` changes to your gitpod workspace
-
-**You can do the steps 3-9 for the image/screenshot uploads too!**
-
-### Cheatsheets and Auto Generation Tools
-
-Markdown's not all that easy so sometimes you may want to use some tools to make tables.
-
-- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
-- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table
-  formatting
-- [markdown table of contents generator](https://luciopaiva.com/markdown-toc/) - used to create table of
-  contents (be weary these tools have some bugs if you have dashes or trailing spaces in your headers)
-- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
-
-# GUIDE's Table of Contents
-
-- [PROJECT_NAME](#project_name)
-  - [Live Site](#live-site)
-  - [Repository](#repository)
-  - [Author](#author)
-- [Table of Contents](#table-of-contents)
-- [UX](#ux)
-  - [Target Audience](#target-audience)
-  - [Design Choices](#design-choices)
-    - [Colors](#colors)
-    - [Typography](#typography)
-    - [Images](#images)
-    - [Design Elements](#design-elements)
-    - [Animations and Transitions](#animations-and-transitions)
-    - [Frameworks](#frameworks)
-    - [Custom Styles](#custom-styles)
-    - [Custom Javascript](#custom-javascript)
-  - [Wireframes](#wireframes)
-- [Information Architecture](#information-architecture)
-  - [Entity Relationship Diagram](#entity-relationship-diagram)
-  - [Database Choice](#database-choice)
-  - [Data Models](#data-models)
-  - [CRUD Diagrams](#crud-diagrams)
-- [Agile Process](#agile-process)
-  - [Project Goals](#project-goals)
-  - [Initial User Stories](#initial-user-stories)
-  - [Feasibility vs Importance](#feasibility-vs-importance)
-  - [Scope](#scope)
-  - [Agile Tool](#agile-tool)
-    - [User Story Example](#user-story-example)
-    - [Epic Stories](#epic-stories)
-- [Features](#features)
-  - [Implemented Features](#implemented-features)
-  - [Future Features](#future-features)
-  - [Testing](#testing)
-  - [Manual Testing](#manual-testing)
-  - [Compatibility and Responsive Testing](#compatibility-and-responsive-testing)
-  - [Accessibility Testing](#accessibility-testing)
-    - [Accessibility Audits](#accessibility-audits)
-    - [Keyboard Navigation](#keyboard-navigation)
-    - [Chrome Vox Reader](#chrome-vox-reader)
-  - [Core Web Vitals](#core-web-vitals)
-  - [Validation Testing](#validation-testing)
-    - [CSS Validation](#css-validation)
-    - [HTML Validation](#html-validation)
-    - [JavaScript Validation](#javascript-validation)
-    - [Python Validation](#python-validation)
-    - [JSON Validation](#json-validation)
-  - [Automated Testing](#automated-testing)
-  - [Defects](#defects)
-  - [Defects of Note](#defects-of-note)
-  - [Outstanding Defects](#outstanding-defects)
-- [Technologies Used](#technologies-used)
-  - [Languages](#languages)
-  - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
-- [Deployment](#deployment)
-  - [Prerequisites](#prerequisites)
-  - [Fork and Clone the Repository](#fork-and-clone-the-repository)
-  - [Local Deployment](#local-deployment)
-  - [production Deployment](#production-deployment)
-- [Credits](#credits)
-  - [Content](#content)
-  - [Media](#media)
-  - [Acknowledgments](#acknowledgments)
+# Holiday booking 
+
+If you're looking to book a holiday online, there are several options available to you. Here are the steps you can follow to book your holiday online:
+Decide on your destination and dates of travel. 
+Holiday Booking platform that includes a time-off tracking system for employees. It allows you to request vacation time, view your remaining balance, and see who else on your team has scheduled time off.
+
+
+![Escaperoom responsive](static/readme/escaperoom-responsive.jpg)
+
+# Live Site
+
+[Escape room](https://fred-escape-room-app.herokuapp.com/)
+
+# Content
+
+* [Business Goals](#business-goals)
+
+* [User experience](#user-experience)
+    * [User stories](#user-stories)
+    * [Agile Methodology](#agile-methodology)
+    * [Crud Functionality](#crud-functionality)
+    * [Database Diagram](#database-diagram)
+    * [Wireframes](#wireframes)
+
+* [Feautres](#features)
+    * [Header](#header)
+    * [Hero image](#hero-image)
+    * [Most popular rooms](#most-popular-rooms)
+    * [About us](#about-us)
+    * [Footer](#footer)
+    * [Rooms](#rooms)
+    * [Make a booking sign up/Login](#make-a-booking-message)
+    * [Create an account](#create-an-account)
+    * [Sign in](#sign-in)
+    * [Log out](#log-out)
+    * [Place your booking](#place-your-booking)
+    * [Time slot unavailable message](#time-slot-unavailable-message)
+    * [Email confirmations](#email-confirmations)
+    * [Manage booking](#manage-booking)
+    * [Update booking](#update-booking)
+    * [Updated message](#updated-message)
+    * [Admin panel](#admin-panel)
+    * [404 Page](#404-page)
+    * [Responsive](#responsive)
+    * [Future features](#future-features)
+
+* [Testing](#testing)
+    * [Lighthouse](#lighthouse)
+    * [HTML Validator](#html-validator)
+    * [CSS Validator](#css-validator)
+    * [Python Validator](#python-validator)
+    * [Javascript](#jshint-validator)
+    * [Defects](#defects)
+    * [Manual](#manual)
 
-====================================== The Sections you Fill in are below ==============================
+* [Security Features](#security-features)
 
-# PROJECT_NAME
+* [Bugs](#bugs)
+    * [Solved](#solved)
+    * [Left to solve](#left-to-solve)
 
-🚨**Required**
+* [Credits](#credits)
+    * [Code](#code) 
+    * [Images](#images)
+    * [Technology used](#technology-used)
 
-_replace the **PROJECT NAME** header with your project's name_
+* [Deployment](#deployment)
+    * [Local deployment](#local-deployment)
+    * [Production Deployment](#production-deployment) 
+        * [Create heroku app](#create-heroku-app)
+        * [Connect Postgres database](#connect-postgres-database)
+        * [Deploy app on heroku](#deploy-app-on-heroku)
+        * [PostgreSql](#postgresql)
 
-- One or two paragraphs providing an overview of your project.
-- Write this as a sales pitch or commercial to entice users to interact with your site or how you want investors to invest in or purchase your website.
-- Include a picture of site that shows it in responsive states and links to deployed code: https://ui.dev/amiresponsive
+* [Acknowledgements](#acknowledgements)
 
-## Live Site
+# Business goals
 
-🚨**Required**
+The objective of a holiday booking company in this context would be to provide an exceptional service that meets the needs of employees and companies, leading to a positive experience for the corporate group. This can help build long-term relationships. In addition, it can help the company to organize itself better with the help of this site.
 
-- Include a link to deployed project (typically a Heroku Page)
+# User experience
 
-## Repository
+As an unauthorized user:
+* Ability to access all the features and functions available to an authorized user, such as booking holidays, changing or canceling bookings, and viewing personal information.
+* A user-friendly interface that makes it easy to navigate the site and find the desired information or features.
+* Clear and concise instructions on how to use the site's features and functions, including any necessary steps for booking or modifying a holiday.
+* A reliable and secure system for booking holidays, changing bookings, and canceling bookings.
+* Prompt and effective customer support, including email or phone support, for any questions or issues that may arise during the booking process or during the holiday itself.
 
-🚨**Required**
+As an authorized user:
+* Navigate the site easily and efficiently to view all the content you need.
+* Create an account with a simple and easy process.
+* Book a holiday for a specific time and date, choosing from available options and making payment through the site's secure payment gateway.
+* Receive a confirmation email once the booking is complete, which includes all the relevant details about the holiday.
+* Change the day of your holiday to a different date or time, if the website offers this feature. This may be subject to availability and may require additional payment if the new dates are more expensive than the original booking.
+* Cancel your holiday, if the website offers this feature. The cancellation policy would typically be outlined in the terms and conditions.
 
-- Include a Link to the GitHub repository
+As an administrator, I can:
+* Viewing all available holidays and managing the booking system to ensure that the website's inventory is up-to-date and accurate.
+* Reviewing and authorizing holiday requests from users, based on criteria such as availability, employee schedule, and other factors.
+* Creating new user accounts if necessary, in order to provide access to the site's features and functions for new employees or customers.
+* Managing user accounts and permissions, including setting access levels, resetting passwords, and monitoring activity on the site.
+* Troubleshooting technical issues and providing support to users, including responding to inquiries and resolving any problems that arise.
 
-## Author
+## User stories
+* Provide a registration option for users to create an account and access the booking features.
+* Offer a clear option to opt out of sharing personal information for those who value their privacy.
+* Be designed with easy navigation and user-friendly interface to make it easy for users to find information and take actions.
+* Send a confirmation email after booking to ensure that users have a record of their reservation information.
+* Allow users to cancel their reservation to provide flexibility in their travel plans.
+* Display users' booking information clearly for easy reference.
+* Have a secure login system to ensure the privacy and security of user information and booking details.
+* Provide a prominent "book" button on the homepage to make it easy for users to initiate the booking process.
+* Implement appropriate security measures to ensure that only authorized users can make updates to their reservations.
+* By meeting these user requirements, a holiday booking site can offer a positive user experience that is easy to use, secure, and meets the needs of its customers.
 
-🚨**Required**
 
-DEVELOPER_NAME (take credit for the work you do!)
+## Admin stories
+* User Account Approval:
+As an administrator, you may receive a notification that a new user has registered on the site. You would then review the user's account details, such as name, email, and other information, to verify that they are a legitimate user. You would also check that their account has been created with the appropriate level of access and permissions, based on their role and responsibilities. Once you have confirmed that the user's account is valid and complete, you would approve their account and notify them that they can now log in to the site.
 
-# Table of Contents
+* Holiday Request Approval:
+As an administrator, you would receive notifications when a user has requested a holiday booking. You would review the request details, such as the dates and location of the holiday, and check that the requested dates are available and that the user has sufficient vacation time or other permissions to take the holiday. You would also check that the user's account is in good standing, with no outstanding balances or other issues that would prevent them from booking a holiday. If the request is valid and meets all the necessary criteria, you would approve the holiday request and notify the user that their booking has been confirmed.
 
-🚀 **merit & beyond**
+* Holiday Inventory Management:
+As an administrator, you would have access to the site's inventory management system, which allows you to view all available holidays and make updates as necessary. You would check that all the holidays listed on the site are up-to-date and accurate, with correct pricing, availability, and other details. You would also monitor the inventory levels to ensure that there are enough holidays available to meet user demand, and make adjustments as necessary to avoid overbooking or underbooking. If there are any issues or discrepancies with the inventory, you would investigate and resolve them promptly, to ensure that users have a positive experience when using the site.
 
-Generate after readme is complete by copying and pasting your readme from this point & below into this tool:
+## Agile Methodology
 
-- [mardown table of contents generator](https://luciopaiva.com/markdown-toc/)
-  **NOTE:** It does have some bugs if you have dashes or trailing spaces in your headers, so make sure all these WORK!
+Using Github projects to track user stories and organize tasks based on their level of importance is a key aspect of Agile methodology. By breaking down development into smaller, more manageable tasks, and prioritizing them based on user needs and feedback, developers can ensure that the app meets user expectations and delivers value in a timely and efficient manner. The use of Agile methodology can also help developers to adapt to changes in user requirements or market conditions, and to continuously improve the app over time based on user feedback and usage data.
 
-# UX
+* MUST HAVE
+* SHOULD HAVE
 
-🚨**Required**
+By using AGILE methodology in this project I was able to deliver a site which had all required functionality and was able to give even more extra detail when going through the project.
 
-## Target Audience
+I used GitHub projects board to create the user stories and keep track of my tasks. Here is the link to my board - [Project board](https://github.com/users/ocimar84/projects/2/views/1))
 
-🚀 **merit & beyond**
+Here is also a screenshot overview
 
-our site is most likely geared to a certain audience with a certain interest, that is looking for what your site offers. The type of users, age, gender, interests, and the topic of the site drives many UX decisions so write out what whom you expect to use your site.
+![project board](static/readme/escaperoom-project.jpg)
 
-## Design Choices
+## CRUD functionality
 
-🚀 **merit & beyond**
+Holiday Booking data with full CRUD Functionality:
 
-Now that you have let the assessors know about the target audience and users, you can go into the design choices
+**Create** - Users can create a new account and make a booking for their specific requirements. This involves creating a new record in the database that contains information about the user and their booking details, such as the date and time of the booking, the number of people in the group, and any special requests or requirements.
 
-### Colors
+**Read** - Users can view their booking details in the "Manage Booking" section of the app. This involves querying the database for the relevant record(s) based on the user's login credentials or booking ID, and displaying the information in a user-friendly format.
 
-🚀 **merit & beyond**
+**Update** - Users can update their booking by changing any of the details within the booking form. This involves updating the relevant record(s) in the database with the new information, and notifying the user that their changes have been saved.
 
-- Discuss your color pallet choices and how it ties into users' emotions or target audience.
-- include a screenshot of your pallet using a tool like coolors.co
+**Delete** - Users can delete their booking from the database. This involves removing the relevant record(s) from the database and notifying the user that their booking has been cancelled.
 
-### Typography
+## Database diagram
 
-🚀 **merit & beyond**
-
-- discuss font size, font types for headers vs buttons vs general text and how it ties into users' emotions or target
-  audience.
-- include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
-
-### Images
-
-🚀 **merit & beyond**
-
-Explain why you used certain icons and images on your site
-
-### Design Elements
-
-🚀 **merit & beyond**
-
-- list out the type of elements you want to use on your site, this will help you when choosing a framework and goes hand
-  in hand when doing the wireframes. If you did something out of the ordinary, or think something was particularly
-  clever, add a sentence and a screenshot or reference the file the code or css is in.
-
-> - desktop navigation
-> - mobile navigation
-> - footer
-> - containers/cards
-> - buttons
-> - text input
-> - textarea inputs
-> - dropdowns
-> - modals/layers
-> - check boxes
-> - switches
-> - accordions/drawers
-> - pagination
-> - date pickers
-> - maps
-> - images
-> - tooltips
-> - icons
-> - tabbed content
-> - file pickers
-> - video players
-> - audio players
->   z
-
-### Animations and Transitions
-
-🚀 **merit & beyond**
-
-- discuss any special animations or transitions you've programmed
-- special hover state effects
-
-### Frameworks
-
-🚨**Required**
-
-- If you use bootstrap, tailwind, bulma, materialize or some other JS/CSS framework, call it out here and why you made
-  that choice. (Typically I look at the design elements I want and make sure the framework supports them)
-
-### Custom Styles
-
-🚨**Required**
-
-- call out any overrides you did for bootstrap styles or the framework you used, even if they are fonts and colors, perhaps lead assessors to the file of interest in your repo
-
-### Custom Javascript
-
-🚨**Required**
-
-- call attention to any custom javascript you created to help your User Experience you can organize this by functions or files
+![Diagram](static/readme/escaperoom-diagram.jpg)
 
 ## Wireframes
 
-🚨**Required**
+I built these wireframes with balsamiq to help me get a design ready for the website. The final website may look different form the inital wireframes.
 
-This section where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process.
+It's assumed that on smaller devices such as tablets and mobile phones, multiple column presentations such as room images on the home page, room imagery and details on the rooms page, and the columns of the footer would stack to one column. Also the navbar on smaller screens will come to one and provide a dropdown.
 
-- you need **mobile** & **desktop** views
-- Capture Your Custom model's
-  - CREATE/ADD
-  - READ (LIST/DETAIL)
-  - UPDATE/EDIT
-  - DELETE
-  - & triggers for such things
-- call out differences for authentication levels:
-  - not logged in
-  - general user logged in
-  - super user logged in
-- HOW is the NAVIGATION different for admin users vs Logged-in users & unauthenticated users
+This is the wireframe for the homepage. It has a base navbar and footer. Includes a hero image and welcome text. Then a little picture montage of the rooms. Then an about us section
 
-🚀 **merit & beyond**
+![Home page wireframe](static/readme/escaperoom-homewire.jpg)
 
-- tablet views
-- Custom 404
-- Profile Page
-- Login
-- Register
-- Forgot Password
+The room page will showcase the rooms with a nice design.
 
-You can hand draw these, but CI posts a yearly license in the general channel for Balsamiq which is pretty easy to use.
-Here is the [2022 announcement](https://code-institute-room.slack.com/archives/C0L316Z96/p1640099614368000)
+![Room page wireframe](static/readme/escaperoom-rommwire.jpg)
 
-# Information Architecture
+The booking form will be simple and clean with just the key information required.
 
-🚨**Required**
+![Booking page wireframe](static/readme/escaperoom-bookwire.jpg)
 
-As part of the requirements for this project you need to have at least **1 original data model**. It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built.
+The manage booking section will have an update and cancel booking button. Making the booking managable for the users.
 
-## Entity Relationship Diagram
-
-🚨**Required**
-
-[draw.io](https://app.diagrams.net/) is a free tool that can help you draw up an ERD concerning your custom model.
-
-Wade Williams wrote a great [blog](https://wadewilliams.com/technology-software/generating-erd-for-django-applications/) on how to add a django extension to auto create an ERD.
-
-You can always draw one out by hand or in google sheets.
-
-## Database Choice
-
-🚨**Required**
-
-Just state you used postgres as the database because the data is relational and heroku serves this up reactively easily with no cost. (this might be changing as Sales Force takes over in November 2022)
-
-## Data Models
-
-🚨**Required**
-
-Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them.
-
-Each data model that you created yourself and customized should have its Fields, Field Type and any validation documented. You should also cross-reference any code in your repository that relate to CREATE, READ, UPDATE, DELETE operations for these models.
-
-You can try to use markdown, or just take a screenshot from a Google spreadsheet.
-
-Below is an example of a write-up for an Activities Data Model
-
-> **Activities Model**
-> Activities is a table to hold a unique icon image and name values that users have associated with events and places. It helps with sorting events and prevents the need from carrying around two data objects in the larger Events and Places data structures. The purpose of an Activities object is to provide an imagery association to a category.
->
-> | DB Key | Data Type |          Purpose          | Form Validation                        | DB processing    |
-> | ------ | :-------: | :-----------------------: | -------------------------------------- | ---------------- |
-> | \_id   | ObjectId  |     unique identifier     | None                                   | n/a              |
-> | name   |  String   |     Name of Activity      | Required<br>Min 1 char<br>Max 50 chars | trim<br>to lower |
-> | icon   |  String   | system path to image file | Required                               |                  |
->
-> Activity entries are used by events, places and filtering.
->
-> - [x] Create - An activity is potentially created when a user successfully creates a place, creates an event, updates an event, or updates a place.
-> - [x] Read - The Activities table is read when a user is adding an event, updating an event, adding a place or updating a place, to determine if a new value should be created or not. The activities table is queried for using the name and icon pair, if it is found, the ObjectId is passed to the event and places. If no match is found, a new Activity is created and that ObjectID is passed to the place or event.
-> - [ ] Update
-> - [ ] Delete
->
-> This table has no deletion or updates associated with it. It's strictly create and read. Eventually, maintenance scripts should be written to delete unused/deprecated entries.
->
-> The reading/writing of the activities table is housed in the [what2do2day/activities/views.py](what2do2day/activities/views.py) file.
-
-## CRUD Diagrams
-
-🚀 **merit & beyond**
-
-You can also have CRUD diagrams to show the accessors visually how the model is
-used in your site.
-
-I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive to create the screenshot below
-
-> ![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
-
-# Agile Process
-
-🚨**Required**
-
-## Project Goals
-
-🚨**Required**
-
-This project was built to do something. Show blogs, engage users, track bookings, share recipes, provide admins nice ways to add/update/delete records. Privately store information. Write out the purpose of this site.
-
-Project Goals sum up what you expect different users to do on your site.
-
-- some just come and read things related to your topic.
-- some users are administrating the site (adding, updating & deleting models)
-- some users are registered, so they manage information of their choice, interact with others, do a certain tasks
-
-**what to keep in this section**
-Document your project goals by one of the following methods:
-
-- List the project goals by type of users
-- Flat list
-- Quick paragraph
-
-## Initial User Stories
-
-🚨**Required**
-
-To start the agile process this section kicks off with a bullet list/brainstorming dump about features you'd like to have. EVERYTHING write them out in bullet form:
-
-- As a 'user type' I 'to perform an action' so that I can 'achieve a goal'
-
-You can put this into a googlesheet and link to it.
-
-**User Story Examples**
-
-- [radiology booking](https://github.com/DeannaCarina/ELHTRadiology#user-stories)
-- [places/events searching site](https://github.com/maliahavlicek/what2do2day#user-stories)
-
-## Feasibility vs Importance
-
-🚀 **merit & beyond**
-
-To scope the project for a MVP (minimally viable product) a feasibility analysis was done.
-
-The features in the table below have been taken from the user stories above. Generic features found in most websites
-will also be implemented such as nav-bar, footer, obvious website purpose etc.
-
-| Opportunity/Feature | Feasibility/Viability (score out of 5) | PurposeLevel of Importance (score out of 5) | In Or Out |
-| ------------------- | -------------------------------------- | ------------------------------------------- | --------- |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-|                     |                                        |                                             |           |
-
-> You should discuss the outcome of what you will be dropping based on the outcome. Making a scatter plot of the scores and coloring the dot
-
-## Scope
-
-🚀 **merit & beyond**
-
-Now you have to talk about the scope to reduce things more, you don't necessarily need all the bells and whistles, they could be beyond your skill set. Think basic stuff. Write a paragraph to sum up how you morphed the project goals into a prioritized list of user stories that would be delivered as an MVP (minimal viable product).
-
-## Agile Tool
-
-🚨**Required**
-
-You are required to use an agile tool to track user stories through the development process. You could use a spreadsheet, JIRA, or another tool, and CI taught you how to use GitHub Issues to write your user stories.
-
-- State what tool you used (GitHub, Jira, Rally, Trello, a spreadsheet)
-- Include a link to the tool's product/progress board
-- Include a screenshot of the tool's product/progress board
-
-Lessons on how to use gitHub for a product board can be found in the LMS system under:
-
-- Principles of Agile Development >
-  - Common Agile Practices >
-    - Product Backlog
-
-### User Story Example
-
-🚨**Required**
-
-- include a screenshot of a user story with all it's details
-
-If you made a template, call that out and provide:
-
-- link to template
-- screenshot of template
-
-### Epic Stories
-
-🚀 **merit & beyond**
-
-If you want a chance at **DISTINCTION**, you need to have epic stories to stories with tasks.
-
-Example:
-EPIC: Navigation As a user, I want to have easy to see navigation on the page, so I can intuitively interact with the site without getting frustrated both on mobile and desktop devices.
-
-USER STORY: Navigation: Unauthenticated user: As an unauthenticated user I want to see what the site is about, and easily figure out how access more information.
-
-Tasks:
-
-- [ ] Build Template so information in one spot
-- [ ] Rough in Logo
-- [ ] Add in Register/Login/Forgot Password
-- [ ] Add Main List Page
-- [ ] Rough in CSS
-
-Acceptance Criteria
-
-- [ ] navigation sticks in view as user scrolls
-- [ ] looks good on mobile
-- [ ] looks good on desktop
-- [ ] links work & go where expect
-- [ ] passes accessibility
-
-**What to keep in this section**
-
-- screenshot of epic story
-- EPIC TEMPLATE screenshot
-- link to EPIC TEMPLATE
+![Manage booking wireframe](static/readme/escaperoom-bookingwire.jpg)
 
 # Features
 
-🚨**Required**
+## Header
+The header is the main navigation of the site. It allows the user to access all parts of the webpage with just a single click.
+It has a nice contrasting colour between the background colour and the text colour. When the user hovers over the text, there will be a slight
+change in colour which will notify the user that it is a clickable link. The navbar has been split into two, on the left is the links to 
+access the contents of the webpage and on the right is all the user information pages.
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into your user stories.
+![Navigation bar](static/readme/escaperoom-header.jpg)
 
-## Implemented Features
+## Hero image
+The hero image is very big and prominent. It makes it obvious to the user what this webpage is about. The text in the center welcomes the user and 
+it also has a button to book, which gives the user direct access to the booking page.
 
-🚨**Required**
+![Hero Image](static/readme/escaperoom-hero.jpg)
 
-It's easiest to break this section down into the header, footer, and each page/layer/signification section of your website. Call out any differences for mobile vs desktop presentations, include a screenshot of the implemented feature.
+## Most popular rooms
+In this section, it promotes the 3 most popular rooms with a small description of what the rooms are. From here the user can go to the booking page through the "book" link. 
 
-Don't forget your custom 404 error page
+![Most popular room section](static/readme/escaperoom-popular.jpg)
 
-Don't forget the 3 phases of navigation:
+## About us
+At the bottom of the home page the user can find an about us section. This is where the user can understand a bit more about who runs the comapny and more on what it is.
 
-- unauthenticated
-- general authenticated user
-- superuser authenticated
+![About us](static/readme/escaperoom-about.jpg)
 
-And don't forget Defensive programming bits
+## Footer
+The footer hold all the important information that the user will want to know about the company. This includes a Google Maps API of the location of the business so 
+the user can make a plan of how they are going to get to the location. It also tells the user the opening and closing times of the comapany so they can decided what time they would like to play. It also shows the contact information if the user needed to contact the company. 
 
-- validation of form inputs
-- not allowing users to create, read, update and delete information they shouldn't
+![Footer](static/readme/escaperoom-footer.jpg)
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+## Rooms
+This section provides the user with the information to all of the rooms. From here the user can read up about all of the rooms and see the prices, capacity and duration to make a decision on what room they want to play. Each room has a book button which will take the user straight to the booking page.
+
+![Rooms](static/readme/escaperoom-rooms.jpg)
+
+## Make a booking message
+If the user isnt logged in they will be asked to either log in or create an account. They will be promted with two buttons which will take them to the allauth form they require to procede with making a booking.
+
+![Make a booking message](static/readme/escaperoom-make.jpg)
+
+## Create an account 
+Here the user in prompted with 4 simple inputs to create an account. If they already have an account there is a link that will take them to the "sign in" page instead. Once the user has entered the information they can submit and they will have created an account ready to make a booking.
+
+![create an account](static/readme/escaperoom-signup.jpg)
+
+## Sign in
+Here the user in prompted with 2 simple inputs to sign in with. If they dont have an account there is a link that will take them to the "sign up" page instead. Once the user has entered the information they can sign in and they will be ready to make a booking.
+
+![Sign In](static/readme/escaperomm-signin.jpg)
+
+## Log out
+If the user wishes to log out they will be redirected to this page where they will be asked to confirm that they want to log out.
+
+![Logout](static/readme/escaperoom-signout.jpg)
+
+## Place your booking
+Once the user is ready to make a booking they will be able to fill out this form. Here they will be asked for their first name, last name, email, phone number, date they would like to play, time they would like to play and which room they would like to play. The date will have a datepicker dropdown which makes it easy for the user to select their chosen date. The time will have a dropdwon for the times between 10am and 6pm to make it clear to the user that these are the times of opening. Once the user is happy they can submit their booking request.
+
+![Booking](static/readme/escaperoom-book.jpg)
+
+## Time slot unavailable message
+If the users desired booking as already been placed by someones else, this message will appear at the the top of the form. The user can then select another date or time of their choice.
+
+![Slot unavailable](static/readme/escaperoom-available.jpg)
+
+## Email confirmations
+When a successful booking has been placed they will be redirected to this page. They will get a thank you message and a confirmation email of the details they have choosen. The user can then access their booking from this page by clicking on the link.
+
+![Thanks for booking](static/readme/escaperoom-thankyou.jpg)
+
+## Dropdown
+Once logged in the user can see they are logged in because their username will appear in the navbar. From here there will be a dropdown where the user can access their bookings from and where they can also log out from.
+
+![Dropdown](static/readme/escaperoom-dropdown.jpg)
+
+## Manage bookings
+If the user has a booking, they can view, update or delete their booking from this section. The details of their booking will be shown here alongside with two buttons. One to delete and one to update.
+
+![Account page](static/readme/escaperoom-account.jpg)
+
+If they do not have any booking they will be shown this screen. Here there is a button they can click to take them to the booking form to make one if they want to.
+
+![no booking](static/readme/escaperoom-nobooking.jpg)
+
+## Update booking
+If the user wants to update their booking they will be taken back to the form. All of their previous information will already be here in place. The user can then update anything they need to. They will get the prompt if the slot is already taken again. Once they are happy with their new details they can submit and the changes will be shown in the manage bookings area.
+
+![Update booking](static/readme/escaperoom-updatebook.jpg)
+
+## Updated message
+Once they submit the update. This message will appear to confirm their changes and they will also get a confirmation email with their new booking.
+
+![Update message](static/readme/escaperoom-message.jpg)
+
+## Cancel confirmation
+If the user want to cancel their booking they can. Once they press the red cancel button they will be prompted by this alert. This is where they can confirm that they want to delete their booking and give double confirmation.
+
+![Cancel confirmation](static/readme/escaperoom-cancel.jpg)
+
+Once they confirm they will be shown this message and the changes will reflect in the manage bookings area.
+
+![Cancel message](static/readme/escaperoom-cancel-message.jpg)
+
+## Admin panel
+The admin can access this panel by logging in with the superuser details. They will be able to get an overview of all of the information about the website. Including the information of the users, the rooms and the bookings.
+
+![Admin panel](static/readme/escaperoom-admin.jpg)
+
+Here the admins can see the bookings that have been placed. They will see all of the important information about the booking such as time, date, name of the booker, room name and email. The admin has an option to delete bookings from the system from this panel.
+
+![Admin booking](static/readme/escaperoom-adminbooking.jpg)
+
+Here the admin can alter any of the information about the rooms including the name, price, duration, capacity, description or image. They can also add new rooms if they wish to expand of even remove rooms.
+
+![Admin rooms](static/readme/escaperoom-adminrooms.jpg)
+
+## 404 Page
+This is the page the users will be shown if they have an incorrect url for whatever reason. they will have a link they can press to take them back to the home page.
+
+![404 page](static/readme/escaperoom-404.jpg)
+
+## Responsive
+
+To prove my responsiveness of my page, I have screenshots of what the main features look like on a mobile.
+
+* Header
+    * Here the navbar links form into a dropdown making it good UX.
+
+![Header](static/readme/responsive-header.jpg)
+
+* Most popular rooms
+    * The imagery and description goes into a column order
+
+![Most popular rooms](static/readme/responsive-popular.jpg)
+
+* About us
+    * The imagery and description goes into a column order
+
+![About us](static/readme/responsive-about.jpg)
+
+* Footer
+    * It takes order in a column form
+
+![Footer](static/readme/responsive-footer.jpg)
+
+* Rooms
+    * * The imagery, description and details goes into a column order
+
+![Rooms](static/readme/responsive-room.jpg)
 
 ## Future Features
 
-🚀 **merit & beyond**
+* Add newsletter to send discounts and room updates
+* Have times solved for each room that is updated by each visit
+* Automate Top times for each room
+* Make emails easier to read
+* Phone numbers can accept letters however it is low level as the email is more reliable. Update to allow only numbers
 
-Use this section to discuss plans for additional features to be implemented in the future
+# Testing
 
-If you end up not developing some features you hoped to implement, you can include those in this section too.
+## Lighthouse
+The application has been tested with Chrome Dev Tools Lighthouse Testing which tests the application for:
 
-## Testing
+* Performance
+* Accessibility
+* Best Practices
+* SEO
 
-🚨**Required**
+### Home Page
+![Home page](static/readme/Homepage-lighthouse.jpg)
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the Features section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Room Page
+![Room page](static/readme/room-lighthouse.jpg)
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Booking Page
+![Booking](static/readme/book-lighthouse.jpg)
 
-**At this point, you should use gitHub Issues Templates** to track test cases and defects. Here's a [document](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.3kdbr3tqbzi) I put together for this process.
+### Account Page
+![Account](static/readme/account-lighthouse.jpg)
 
-## Manual Testing
+## HTML Validator
 
-🚨**Required**
+When running my HTML code through the [HTML Validation service](https://validator.w3.org/), I encountered a few minor errors that have now all be corrected.
 
-For any scenarios that have not been automated, test the user stories/features manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios in markdown such as:
+This is the home page -
 
-**Manual Testing For Contact Form**
+![HTML error index page](static/readme/escaperoom-html1.jpg)
 
-1. Contact form:
-   1. Go to the "Contact Us" page
-   2. Try to submit the empty form and verify that an error message about the required fields appears
-   3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-   4. Try to submit the form with all inputs valid and verify that a success message appears.
+Fixed
 
-Or you can use markdown check boxes and write them up per feature:
+![Home page fix](static/readme/html-test1.jpg)
 
-**Manual Testing For Contact Form**
+This is the rooms page -
 
-- [x] try to submit
-- [x] Try to submit the empty form and verify that an error message about the required fields appears
-- [x] Try to submit the form with an invalid email address and verify that a relevant error message appears
-- [x] Try to submit the form with all inputs valid and verify that a success message appears.
-- [x] no console errors
-- [x] submit goes to code institute data dump page in new tab
-- [x] looks good on mobile (one column)
-- [x] looks good on tablet (two columns)
-- [x] looks good on desktop (two columns but not SUPER HUGE)
+![HTML room page](static/readme/escaperoom-html2.jpg)
 
-Or you can use a spreadsheet
+Fixed
 
-Here is a [Manual Testing Template](https://docs.google.com/spreadsheets/d/1vc1IVL-ydQwWeWMqnk_GRox6HE6qxDLpchGse8Crayo/edit#gid=296578096) that you can use as a starting point to keep track of your testing efforts. Make a copy of it in your own account and update as needed to reflect the browsers you are testing and features.
+![Room page fix](static/readme/html-test2.jpg)
 
-It's ok to spot check specific functionality across devices and browsers but each page should be viewed as a whole for each device/browser combo at least once.
+This is the booking page
 
-A quick way to check if items are exceeding the screen width of a project is to run this javascript in the console for various screen emulations:
+![Booking page](static/readme/html-test3.jpg)
 
-```
-var docWidth = document.documentElement.offsetWidth;
-[].forEach.call(document.querySelectorAll('*'),function(el){if(el.offsetWidth > docWidth){console.log(el);}});
-```
+This is the account with booking page
 
-## Compatibility and Responsive Testing
+![Account with booking](static/readme/html-test4.jpg)
 
-🚨**Required**
+This is the account without bookings page
 
-> To save time, you can create this type of table in [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
->
-> As of Feb 14, 2022 CI students can take advantage of the Student Developer Pack where you have access to great things like [browserstack](https://education.github.com/pack/offers/#browserstack) You should have received an email about how to activate your student Developer Pack, here's a [slack](https://code-institute-room.slack.com/archives/C0L316Z96/p1644946870567999) with details if you can't find it in the associated thread.
+![Account without booking](static/readme/html-test5.jpg)
 
-Minimally you should use dev tools and emulators to try to test you site on various screen sizes and browsers and note it in a table:
+This is the thank you page
 
-I ensured my site was worked well, and looked nice on a variety of devices & browsers as noted in the table below:
+![Thank you](static/readme/html-test6.jpg)
 
-| TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
-| ----------------------------- | ----------- | ---------- | ------------- |
-| real phone: motog6            | chrome 78   | android 8  | XS 360 x 640  |
-| browser stack: iPhone5s       | safari 13   | iOs        | XS 320 x 568  |
-| dev tools emulator: pixel 2   | firefox 69  | android 8  | SM 411 x 731  |
-| browserstack: iPhone 10x      | Chrome 78   | iOs 11     | SM 375 x 812  |
-| browserstack: nexus 7 - vert  | Chrome 78   | android 7  | M 600 x 960   |
-| real tablet: ipad mini - vert | safari 13   | iOs 6      | M 768 x 1024  |
-| browserstack: nexus 7 - horiz | firefox 69  | android 7  | LG 960 x 600  |
-| chrome emulator: ipad - horiz | safari 13   | iOs        | LG 1024 x 768 |
-| browserstack windows PC       | Chrome 78   | windows 10 | XL 1920 x 946 |
-| real computer: mac book pro   | safari 12.1 | Mohave     | XL 1400 x 766 |
-| browserstack windows pc       | IE Edge 88  | windows 10 | XL 1920 x 964 |
+This is the 404 error page
 
-🚀 **merit & beyond**
-Document why you chose the devices:
+![404 page](static/readme/html-test7.jpg)
 
-1. Visit https://gs.statcounter.com/browser-market-share to figure out the most popular browsers & operating system combos seen across the web for the geographic region, and platform(s) and screen sizes you expect your users to belong to.
+This is the 500 error page
 
-2. Include a sentence about why you chose the combinations you did.
+![500 page](static/readme/html-test8.jpg)
 
-3. Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints.
+## CSS Validator
+When running my CSS code through the [CSS Validation service](https://jigsaw.w3.org/css-validator/) I had no bugs.
 
-4. if you can't find the browser/device/OS combinations you want on Browserstack with your GitHub student webpack (or you didn't activate that in time), note what you'd ideally test on then what you ended up testing on as a compromise.
+![CSS Validate](static/readme/css-validate.jpg)
 
-5. Build a table to summarize the choices you made [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
+## Python Vaildator
+When running my code through the [CI Python Linter Validation](https://pep8ci.herokuapp.com/) I had no bugs or errors. Ive decided to ignore the 2 lines too long errors
 
-The combinations above were chosen because of the following information I gathered from [ga.statcounter.com](https://gs.statcounter.com/browser-market-share) for the US from Aug-Oct 2021:
-**browser Version Market Share**:
+This is in my webapp - admin.py
 
-- safari iphone: 26.32%
-- chrome for android: 21.32%
-- Chrome 105.0: 15.77%
-- Chrome 104.0: 6.28%
-- Edge 105: 4.99%
-- Safari 15.6 3.76%
-  **browser Market Share**
-- chrome: 50.28%
-- Safari: 34.65%
-- Edge: 6.37%
-- Firefox: 3.52%
-- Samsung Internet: 2.04%
-- Opera: 0.89%
-  **platform breakdown**
-- mobile: 51.26%
-- desktop: 45.73%
-- tablet: 2.97%
-- console: 0.03%
+![Python screenshot](static/readme/python-1.jpg)
 
-## Accessibility Testing
+This is in my webapp - forms.py
 
-🚨**Required**
+![Python screenshot](static/readme/python-2.jpg)
 
-Accessibility testing is aimed to make sure that those with visual or physical disabilities can still browse your website. Some users have had strokes or accidents that make it difficult to use a mouse, so they use keyboard keys to tab through sites. Others use screen readers that rely on HTML tags to help the user navigate quickly through the site to find information they want, others have color blindness or contrast issues. It's the law to provide services
-Here's a [site](https://www.w3.org/WAI/fundamentals/accessibility-intro/#:~:text=Accessibility%20is%20Important%20for%20Individuals%2C%20Businesses%2C%20Society,-The%20Web%20is&text=That%20is%2C%20the%20accessibility%20barriers,older%20people) where you can learn more about accessibility and the internet.
+This is in my webapp - urls.py
 
-### Accessibility Audits
+![Python screenshot](static/readme/python-3.jpg)
 
-🚨**Required**
+This is in my webapp - views.py
 
-Accessibility audits run through the HTML and determine if the parts of the WCAG (web content accessibility guidelines ) that are implemented through HTML tags and attributes are present. They can do some checking for low vision/contrast stuff too.
+![Python screenshot](static/readme/python-4.jpg)
 
-You should run your deployed website pages through at least on auditing tool. lighthouse's audit to check performance, accessibility, best practices and SEO scores. You should aim to get 85 or higher score on accessibility.
+![Python screenshot](static/readme/python-5.jpg)
 
-**You should fix issues associated with:**
 
-- contrast
-- aria labels
-- alt text
-- large images
-- skewed images
+## JSHint Validator
+When running my JavaScript through [JSHint validator](https://jshint.com/) I had no bugs or erros.
 
-**Lighthouse**
-https://web.dev/measure/ If you have lower scores, read the report and follow the links to address the flagged issues. You can run this tool from Chrome Dev Tools too against your local machine, but chrome extensions can sometimes give you missing alt text on things like the grammarly plug in tracking pixel.
+* This is for the datepicker
 
-You want a score in the green for accessibility and should look at ways to get it to 100.
+![Javascript screenshot](static/readme/escaperoom-js.jpg)
 
-**[WAVE chrome](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en-US) extension**
-Wave is developed by webaim.org and does a bit better at contrast issues and uses 2.1 guidelines
+* This is for the map. I have a couple undefined variable however I used this website to write the code. [Google maps code](https://developers.google.com/maps/documentation/javascript/adding-a-google-map)
 
-**Contrast Checkers**
-
-- https://webaim.org/resources/contrastchecker/
-- https://color.a11y.com/
-
-### Keyboard Navigation
-
-🚀 **merit & beyond**
-
-Another way to accessibility test your site is to try to click on the browser URL and see what happens if you use the tab, arrow and enter keys. Does it work well or does the user get stuck? Check this in a couple browsers as the focus & active outlines are typically styled by the browser
-
-The expected results for various keyboard entries and field types can be found [here](https://webaim.org/techniques/keyboard/#testing)
-
-You can take a video of this testing if you want and convert it to a gif and paste that into your readme. Record something to yourself in a Slack direct message, then download it. Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via GiHu, and it'll resolve itself.
-
-### Chrome Vox Reader
-
-🚀 **merit & beyond**
-
-If you are really ambitious, you can use the [VoxReader](https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn?hl=en) extension in chrome to see what your site sounds like on a screen reader. It really drives home the need for good aria-labels & semantic HTML.
-
-## Core Web Vitals
-
-🚀 **merit & beyond**
-
-SEO is greatly impacted by your core web vitals. The readout from https://web.dev/measure/ which is essentially a lighthouse audit gives your site scores in 4 categories. Ideally you want your site to be in the green for all 4 scores. web.dev has dedicated servers to test deployed sites without extensions that skew the results, so it's best to get results from this site.
-You should talk about the results for each section pay attention to
-
-## Validation Testing
-
-🚨**Required**
-
-In this section you should write up any websites you used to validate your code and include screenshots.
-
-**Validation issues are an automatic failure** You should run these about 3 times:
-
-- when you first deploy your site
-- just when you think you are done testing
-- right before you submit because 😼, ⚽, 🐶 & 👼 can eliminate a closing tag or curly bracket without you noticing.
-
-### CSS Validation
-
-🚨**Required**
-
-The [Jigsaw validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS.
-
-> If you only have one CSS file, you can just run the validator through one deployed page URL, if you have custom CSS for different pages, make sure you hit those different URLS, or do direct input on each file.
-
-Include a screenshot for each CSS file which includes the Green no ERRORS bar, two check marks:
-
-**styles.css**
-![img.png](documentation/images/css-validation.png)
-
-### HTML Validation
-
-🚨**Required**
-
-The **[W3 HTML Validator](https://validator.w3.org/)** was used to validate HTML by coping the page source as a direct input.
-
-> For each view you wrote, you should validate the HTML and have a test case for it linked to from here
-> NOTE: You may need to right-click to view the source of each page and paste that into the validator if you need to go through authentication to get to the page.
-
-### JavaScript Validation
-
-🚨**Required**
-
-The **[Jshint validator](https://jshint.com)** was used to validate each JS file.
-
-> for each .js file, copy the code and paste it into this site, and have a test case for it linked to from here. You can have warnings, but no errors.
-> if using ES6, add this before pasting in your file: `/*jshint esversion: 6 */ `, similarly you can update it to 7 if you see warnings about ES7 syntax `/*jshint esversion: 7 */ `
-
-### Python Validation
-
-🚨**Required**
-
-**[CI's pep8 tool](https://pep8ci.herokuapp.com/)** was used to validate each .py file created.
-
-> for each .py file you created, copy the source code and paste it into this site, and have a test case for it linked to from here.
-> include a screenshot of results in the test case showing NO ERRORS. (you should do this for all .py files in your repo
-
-**run.py**
-
-![image](https://user-images.githubusercontent.com/23039742/212106175-36b2f18a-7c75-458d-94dd-9886e81c71f3.png)
-
-Ideally you would have no errors remaining outside of line too long which you can fix by
-
-adding
-
-```$python
-# noqa
-```
-
-There is a space before the # and after it to skip the quality assurance for that line.
-
-Note any errors or warnings you are ignoring and why.
-
-### JSON Validation
-
-🤷‍ **Required if you made some files**
-The **[JSONLINT validatior](https://jsonlint.com/)** was used to validate JSON files.
-
-> for each .json file, you should copy the code and paste it into this site, and have a test case for it linked to from here.
-
-## Automated Testing
-
-🚀 **merit & beyond**
-
-If you managed to write jasmine tests or some django tests, note those files out here and how to run them. I only did this in my last project as I didn't have the time or energy to learn how to write tests. https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write-up about those and how I ran them, but a simple test I'd recommend is authentication and any views you limit to superusers or logged-in users:
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py
+![Javascript maps screenshot](static/readme/escaperoom-jsvalidator.jpg)
 
 ## Defects
 
-🚨**Required**
+Phone number allows the user to add letters. This is ok as its low level. The email is more reliable and will be used to contact the user first.
 
-At this point you need to be using GITHUB's Issues to track these as it helps you with the AGILE process requirement and it's really easy to copy/paste screenshots in and then write up how you closed them.
+## Manual
 
-[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit#heading=h.542xzc8ufx4x) I put together on how to do this.
+Testing has been done manually with the google chrome dev tools to make sure the website is fully responsive. I have checked all pages at all key breakpoints to make sure the layout remains user friendly and nothing clashes.
 
-This what my custom bug template looks like in the UX
-![image](https://user-images.githubusercontent.com/23039742/165650359-a352d64e-b128-473d-ab60-7df0568a44df.png)
+I manually tested all buttons, forms and links to make sure the correct action took place. Here are tables to show the testing.
 
-- provide a link to the issues link in GitHub
-- if you made a custom template include a screenshot
-- if you made a custom template include a link to the template
+### Nav bar
 
-## Defects of Note
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| logo   | Takes you to the home page     | PASS    | 
+| Home link     |   Takes you to the home page     | PASS      |
+| Rooms link   | Takes you to the rooms page     | PASS    | 
+| Book link     |   Takes you to the booking page or sign in/sign up page     | PASS      |
+| login/sign up link   | Takes you to the sign in page     | PASS    | 
 
-🚀 **merit & beyond**
+### Footer
 
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here. The accessors really like to know the struggle is real and that by doing this you picked up more skills.
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| google maps   | allows you to see the location     | PASS    | 
+| Facebook link     |   Takes you to the facebook page     | PASS      |
+| Instagram link   | Takes you to the instagram page     | PASS    | 
+| Twitter link     |   Takes you to the twitter page     | PASS      |
 
-## Outstanding Defects
+### Home page
 
-🚨**Required**
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| hero button   | Takes you to the booking page or sign in/sign up page     | PASS    | 
+| popular room link     |   Takes you to the booking page or sign in/sign up page     | PASS      |
 
-It's ok to not resolve all the defects you found as long as:
+### Rooms page
 
-- it does not impact a user from completing a vital function on the website
-- it only affects a very small subset of users
-- is an extreme edge case that very few users would try
-- there is an open issue against a framework, browser or technology used
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| rooms book button   | Takes you to the booking page or sign in/sign up page     | PASS    |
 
-If you know of something that isn't quite right, create an issue and link to it here and explain why you chose not to resolve it.
+### Create an account or Sign in to make a booking page
 
-Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline it's best to mention it but note why you allowed it to go live: "Yes it looks odd, but it doesn't impact core functionality of the site." than to let the accessors think you didn't notice it.
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| sign in button   | Takes you to the  sign in   | PASS    | 
+| sign up button     |   Takes you to the sign up page     | PASS      |
 
-# Technologies Used
+### Create an account form page
 
-🚀 **merit & beyond**
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| sign in link   | redirects to login form   | PASS    | 
+| All inputs   | make sure they're all valid   | PASS    | 
+| sign up button     |   Creates your account and redirects to home page     | PASS      |
 
-This section just summarizers tools and programming languages you used.
+### Sign in form page
 
-## Languages
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| Sign up link   | redirects to create an account form   | PASS    | 
+| All inputs   | make sure they're all valid   | PASS    | 
+| sign in button     |   Sign in to your account and redirects to home page     | PASS      |
 
-🚀 **merit & beyond**
+### Nav bar dropdown once logged in
 
--write bullet points for the languages you used (HTML, CSS, JAVASCRIPT, PYTHON, DJANGO)
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| Dropdown   | brings a dropdown for two options   | PASS    | 
+| booking link   | redirects to manage booking page   | PASS    | 
+| logout link     |   takes you to confirm logout     | PASS      |
 
-## Frameworks, Libraries & Programs Used
+### Booking page
 
-🚀 **merit & beyond**
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| All inputs   | make sure all inputs are valid before submitting   | PASS    | 
+| datepicker   | datepicker should appear   | PASS    |
+| timepicker   | timepicker should appear   | PASS    | 
+| submit button   | submit form and a confirmation message appears on new page   | PASS    | 
 
-List out the tools you used with a link and a short description (this helps others figure out where to get the bonus points & reminds you what you used for your next project
+### Manage booking page
 
-- Balsamiq
-- Coolors.co
-- fontawesome
-- gitpod
-- github
-- google fonts
-- font awesome
-- amiresponsive
-- table of contents creator
-- markdown table generator
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| Update button   | takes you to the booking form   | PASS    | 
+| Cancel button   | bbrings up an alert to confirm cancel   | PASS    |
 
-# Deployment
+### Manage booking bo booking page
 
-🚨**Required**
+| What is being tested | Whats supposed to happen | Pass/Fail |
+| --- | --- | --- |
+| Book button   | takes you to the booking form   | PASS    | 
 
-## Prerequisits
 
-🚀 **merit & beyond**
 
-If the user is required to have certain keys and credentials you should include this section with directions on how to get the necessary information. ex)
+# Security Features
 
-1. **Gmail Account:** In order to have verification and forgot password emails sent to registered users you need a
-   google account.
+* Users cannot deduce the delete url and delete others bookings, they get a custom 500 error page if they do this when not logged in and a warning message if they are authenticated
 
-- [create a gmail accoount](https://accounts.google.com/signup)
-- [downgrade to less secure](https://myaccount.google.com/lesssecureapps?pli=1) after you are signed into the gmail account, downgrade to less secure
+* Users cannot deduce the update ulr and update others’ bookings, they get a custom 500 error page if they attempt to do this.
 
-2. **Couldinary URL**
+* Booking Update: Message Failure trying to book a time already booked
+* Booking Update: Message failure if not logged in
+* Booking Update: Message failure if they dont own booking
+* Booking Cancel: Message Failure if not logged in
+* Booking Cancel: Message failure if they dont own booking
+* Place Booking: User not logged in
+* Place Booking: Time & room already booked
+* 500 Page: This can be activated for many reasons, but you are able to get there if you try to delete a booking that you don’t own, or if you try to access a booking that doesn’t exist
 
-- [create an account](https://cloudinary.com/)
-- go to the dashboard and copy your API environmental variable
+## User authentication
+* Django's all auth was used for login and sign up functionality.
+* Django's superuser is used to limit access to admin panel.
 
-  <img width="1230" alt="image" src="https://user-images.githubusercontent.com/23039742/213839829-b4f349b3-419d-4ea2-bbca-90cf3c663bba.png">
+## Form Validation
+* Extensive form validation is used on front end as well as backend.
 
-## Fork and Clone the Repository
+## Database Security
+* All secret keys connecting the database are stored in a env.py file that is never pushed to github. Furthermore, Cross-Site Request Forgery (CSFR) tokens were used on all forms throughout the project.
 
-🚀 **merit & beyond**
-To keep the main reposotory for this project clean, please fork the repostiory into your own account. GitHub has [forking directions](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) but here's what you might do:
+# Bugs
 
-1. login to your own gitHub account
-2. navigate to [my repository](URL OF YOUR LIVE REPOSITORY)
-3. In the top right corner of the page, click fork
+## Solved
 
-![image](https://user-images.githubusercontent.com/23039742/213840378-e785eaa0-712b-468c-bcda-64fde56eae44.png)
+* I had some contrasting issues which I fixed by using devtools and using their recommended colours
 
-4. set yourself as the owner
-5. change the name of the repo if you want
-6. add a description if you want
-7. choose what to copy, typicall the main branch only
-8. click the snazy green button
+![Contrast](static/readme/readme-contrast1.jpg)
 
-![image](https://user-images.githubusercontent.com/23039742/213840549-5bef12ae-198e-412b-84b6-0cc718b6fa1d.png)
+* I had two main bugs in my project. These two bugs would allow hackers to delete and update someone else's bookings. I first had to check if the user that was trying to update or cancel the booking, owned that booking. I done that through this code - 
 
-9. To get files to your local environment, you need to clone it: click the code button
-10. Copy the url as needed (here's gitHub instructions)[https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository}
+![Bug](static/readme/escaperoom-bug.jpg)
 
-## Development Deployment
+* Then I had to write an if statement to allow the authenticated user to continue their action. If not they get a custom 500 error page.
 
-🚨**Required**
+![500](static/readme/escaperoom-bug500.jpg)
 
-This section should describe the process someone would have to go through to get the local working in GitPod, or your preferred IDE. Start from installing the chrome extension then clicking the green gitpod button in THEIR FORKED repository, the enumerate the steps to walk them through the process as if they were brand new to this proccess. **Include screenshots** where applicable.
+* I had an issue when refresing on thank you booking page, it sends user another email. I had my email in the wrong section of my code and was a simple fix with a quick move. 
 
-**Key points to cover**
+![Email code](static/readme/escaperoom-bugemail.jpg)
 
-- Install required python packages: `pip3 install -r requirements.txt`
-- Create env.py
-- What to put in the env.py, don’t disclose real values
-  > - EMAIL_HOST_PASSWORD=<YOUR_VALUE>
-  > - DEFAULT_FROM_EMAIL=<YOUR_VALUE>
-  > - EMAIL_USERNAME=<YOUR_VALUE>
-  > - SECRET_KEY=<YOUR_VALUE>
-  > - CLOUDINARY_URL=<YOUR_VALUE>
-  > - DEV=True
-- Apply Database Migrations so the database starts up `python3 manage.py migrate`
-- Create a super user so you can add and inspect things via django admin `python3 manage.py createsuperuser`
-- Preload data: Sometimes you might want to include steps to create data in the admin or preload a data dump [coderwall blog](https://coderwall.com/p/mvsoyg/django-dumpdata-and-loaddata) has examples on how to dump data and load it which saves a bunch of time when deploying the application from a local database to a hosted database but you don’t have to do this step
-- Start the server `python3 manage.py runserver`
+* I also had a bug with my messages. If a user were to sign in and sign out, then sign in to another account you would get a long list of messages appear on the my bookings page.
 
-## Production Deployment
+![Message bug](static/readme/escaperoom-bugmessage.jpg)
 
-🚨**Required**
+* To fix this I moved my for message loop out of my_booking.html into the base.html. This meant that the message would appear one at a time instead of a build up of messages once you opened the my_booking.html.
 
-This section should describe the process you went through to deploy the project to a server where anyone can access the url without your machine running. This is typically Heroku. **Include screenshots** if you think they would make the process easier. Start with getting an heroku account and then setting up databases and other packages.
+## Left to solve
 
-If you have project settings required for Heroku, provide a table of the keys and values. Do not share your personal
-keys but either cut them out of the screenshot or say <YOUR_VALUE> and include links on how the user would obtain such
-values.
-
-**Key points to cover**
-
-- cerating new app
-- setting app name
-- setting region
-- entering dreaded billing info
-- subscribing to a plan
-- setting up db
-- adding environmental values- have a list or table so user has less chance of typos
-  > - EMAIL_HOST_PASSWORD
-  > - DEFAULT_FROM_EMAIL
-  > - EMAIL_USERNAME
-  > - SECRET_KEY
-  > - CLOUDINARY_URL
-  > - COLLECT_STATIC
-- adding build packages
-- deploy
-- gitHub connection
-- auto vs manul deploy
-- monotior logs
+There are no more bugs to solve as of 18/01/2023
 
 # Credits
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc
-that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things.
-Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did.
+## Code 
 
-- [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
-- The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+* I used [this website](https://timepicker.co/?fbclid=IwAR2OiqEuDfKTM7438Gk72GFZjP0l4ze-A7aRiBSfE4FAJeH0Q8jIjk_-EcY) to make the datetime picker.
+* I used [this website](https://opensource.com/article/22/12/django-send-emails-smtp) to send emails to the users.
+* I used [this website](https://developers.google.com/maps/documentation/embed/get-api-key) to help me create the google maps API.
+* I used [this website](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#for-empty) to help me with for loops on my_booking.html
 
-## Content
+## Images
 
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
+I used the following website to get my free stock images from -
 
-## Media
+* [Pexels](https://www.pexels.com/)
+* [Unsplash](https://unsplash.com/)
 
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site.
-This includes attribution for icons if they came from font awesome or other sites, give them credit.
+## Technology used
 
-## Acknowledgments
+* [Django](https://www.djangoproject.com/) - A model-view-template framework used to create Locksmith Booking
+* [Bootstrap](https://getbootstrap.com/) - A CSS framework used for the front end development.
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
+* [JavaScript](https://www.javascript.com/) - Provides interactive elements of the website
+* [Python](https://www.python.org/) - Provides the functionality of the website.
+* [Gitpod](https://www.gitpod.io/) - Used to create and edit the website.
+* [GitHub](https://github.com/) - Used to host the repository.
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness and debug.
+* [Am I Responsive](https://ui.dev/amiresponsive) - Used to generate mockup of my webpage.
+* [Cloudinary](https://cloudinary.com/) - Used to host all static files and images.
+* [Heroku](https://id.heroku.com/login) - Used to deploy the website.
+* [ElephantSQL](https://www.elephantsql.com/) - Used to host my database
+* [CI Python Linter](https://pep8ci.herokuapp.com/) - Used to validate Python code.
+* [HTML Validation](https://validator.w3.org/) - Used to validate HTML code.
+* [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code.
+* [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code.
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+# Deployment
 
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
+## Local deployment
+To test the app locally, the terminal within VScode was used. The steps to run this:
+
+* Start from installing the chrome extension then clicking the green gitpod button in YOUR forked repository
+* Include the pip3 install -r requirements.txt
+* Creating env.py
+    * EMAIL_HOST_PASSWORD=<YOUR_VALUE>
+    * DEFAULT_FROM_EMAIL=<YOUR_VALUE>
+    * EMAIL_USERNAME=<YOUR_VALUE>
+    * SECRET_KEY=<YOUR_VALUE>
+    * CLOUDINARY_URL=<YOUR_VALUE>
+    * DEV=TRUE
+* Migrate so the database starts up python3 manage.py migrate
+* Create a super user so you can make the rooms in the admin and other things  python3 manage.py createsuperuser
+* Start the server python3 manage.py runserver
+* Use the website as usual.
+
+A local database was used for most of the local deployment usage, since it was necessary for the automated tests to run. However, the switch to using the production database could be easily made, in case migrations needed to be performed or otherwise. Furthermore, in the development version, DEBUG was set to False, so error messages would show.
+
+## Create a Fork
+
+* On GitHub.com, navigate to the repository.
+* In the top-right corner of the page, click Fork.
+* Select an owner for the forked repository.
+* By default, forks are named the same as their upstream repositories. You can change the name of the fork to distinguish it further.
+* Optionally, add a description of your fork.
+* Choose whether to copy only the default branch or all branches to the new fork. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. By default, only the default branch is copied.
+* Click Create fork.
+
+## Production delpoyment 
+Escape room is deployed to Heroku, using an ElephantSQL Postgres database. To duplicate deployment to Heroku, follow these steps:
+
+After you have forked the project for your own, continue these steps as follows -
+
+* You will need a Cloudinary account to host user images and static files.
+* Login to [Cloudinary](https://cloudinary.com/).
+* Select the 'dashboard' option.
+* Copy the value of the 'API Environment variable' from the part starting cloudinary:// to the end. You may need to select the eye icon to view the full environment variable.Paste this value somewhere for safe keeping as you will need it shortly (but destroy after deployment).
+* Log in to [Heroku](https://id.heroku.com/login).
+* Select 'Create new app' from the 'New' menu at the top right.
+* Enter a name for the app and select the appropriate region.
+* Select 'Create app'.
+* Select 'Settings' from the menu at the top.
+* Login to [ElephantSQL](https://www.elephantsql.com/).
+* Click 'Create new instance' on the dashboard.
+* Name the 'plan' and select the 'Tiny Turtle (free)' plan.
+* Select 'select region'.
+* Choose the nearest data centre to your location.
+* Click 'Review'.
+* Go to the ElephantSQL dashboard and click on the 'database instance name' for this project.
+* Copy the ElephantSQL database URL to your clipboard (this starts with postgres://).
+* Return to the Heroku dashboard.
+* Select the 'settings' tab.
+* Locate the 'reveal config vars' link and select.
+* Enter the following config var names and values:
+* CLOUDINARY_URL: your cloudinary URL as obtained above
+* DATABASE_URL: your ElephantSQL postgres database URL as obtained above
+* PORT: 8000
+* SECRET_KEY: your secret key
+* Select the 'Deploy' tab at the top.
+* Select 'GitHub' and confirm you wish to deploy using GitHub. You may be asked to enter your GitHub password.
+* Find the 'Connect to GitHub' section and use the search box to locate your repo.
+* Select 'Connect' when found.
+* Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed site to be automatically redeployed every time you push changes to GitHub.
+* Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
+* Your site will shortly be deployed and you will be given a link to the deployed site when the process is complete.
+
+# Acknowledgements
+
+A huge thanks to my mentor Malia for going through my project and helping me with any issues I had to deal with.
