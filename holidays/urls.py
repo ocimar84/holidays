@@ -5,7 +5,7 @@ from . import views
 
 urlpatterns = [
     path('accounts/', include('allauth.urls')),
-    path("accounts/profile/", TemplateView.as_view(template_name="profile.html")),
+    path("accounts/profile/", views.profile, name="profile"),
     path("timeoffs/create", views.create, name="create"),
     path("timeoffs", views.show, name="show"),
     path("", views.index, name="index"),

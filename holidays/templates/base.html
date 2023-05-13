@@ -45,6 +45,13 @@
           </div>
         </a>
         <div class="flex md:order-2">
+          {% if user.is_authenticated %}
+            <a href="{% url 'profile' %}" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">Profile</a>
+            <a href="{% url 'account_logout' %}" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">Logout</a>
+          {% else %}
+          <a href="{% url 'account_login' %}" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">Login</a>
+          <a href="{% url 'account_signup' %}" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">Sign Up</a>
+          {% endif %}
           <button
             id="theme-toggle"
             type="button"
