@@ -41,8 +41,10 @@ def profile(request):
     """View function for profile page of site."""
 
     departments = Department.objects.all().order_by('name')
-    time_offs = TimeOff.objects.select_related(
-        'user').filter(user__exact=request.user.id, status__in=['requested', 'approved']).order_by('start_date')
+    if request.user.is_superuser:
+        time_offs = TimeOff.objects.select_related('user').filter(status__in=['requested', 'approved']).order_by('start_date')
+    else:
+        time_offs = TimeOff.objects.select_related('user').filter(user__exact=request.user.id, status__in=['requested', 'approved']).order_by('start_date')
 
     context = {
         'departments': departments,
