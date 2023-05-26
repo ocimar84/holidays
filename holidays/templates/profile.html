@@ -17,9 +17,9 @@
   </div>
 
   {% if time_offs|length == 0 %}
-    <div class="p-4 bg-orange-200 text-center">
-      You don't have any time off yet.
-    </div>
+  <div class="mb-4 p-4 text-center rounded border text-orange-500 bg-orange-100 border-orange-500">
+    You don't have any time off yet
+  </div>
   {% else %}
   <ol
     class="divide-y divide-gray-100 overflow-hidden rounded-lg bg-white text-sm shadow ring-1 ring-black ring-opacity-5"
@@ -52,11 +52,19 @@
         </time>
       </div>
       
+      {% if user.is_authenticated and user.is_superuser %}
       <a
-        href="{% if user.is_authenticated and user.is_superuser %}/admin/holidays{% endif %}/timeoff/{{ time_off.id }}/change/"
+        href="/admin/holidays/timeoff/{{ time_off.id }}/change"
         class="ml-6 flex-none self-center rounded-md bg-white px-3 py-2 font-semibold text-gray-900 opacity-0 shadow-sm ring-1 ring-inset ring-gray-300 hover:ring-gray-400 focus:opacity-100 group-hover:opacity-100"
-        >Edit<span class="sr-only">, {{ time_off.user.first_name }}</span></a
+        >Edit in Admin<span class="sr-only">, {{ time_off.user.first_name }}</span></a
       >
+      {% else %}
+      <a
+        href="{% url 'destroy' time_off.id %}"
+        class="ml-6 flex-none self-center rounded-md bg-red-200 px-3 py-2 font-semibold text-red-900 opacity-0 shadow-sm ring-1 ring-inset ring-gray-300 hover:ring-gray-400 focus:opacity-100 group-hover:opacity-100"
+        >Delete<span class="sr-only">, {{ time_off.user.first_name }}</span></a
+      >
+      {% endif %}
     </li>
     {% endfor %}
   </ol>

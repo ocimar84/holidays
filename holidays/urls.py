@@ -5,8 +5,8 @@ from . import views
 
 urlpatterns = [
     path('accounts/', include('allauth.urls')),
-    path("accounts/profile/", views.profile, name="profile"),
-    path("timeoffs/create", views.create, name="create"),
-    path("timeoffs", views.show, name="show"),
-    path("", views.index, name="index"),
+    path('accounts/profile/', views.profile, name='profile'),
+    path('timeoff/create', views.create, name='create'),
+    path('timeoff/<int:id>/delete', views.destroy, name='destroy'),
+    path('', views.index, name='index'),
 ]

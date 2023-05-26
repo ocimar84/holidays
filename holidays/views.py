@@ -14,6 +14,7 @@ def create(request):
 
     error = False
     message = ""
+    message_type = "alert"
 
     try:
         department_id = request.POST["department"]
@@ -40,12 +41,34 @@ def create(request):
         time_off = TimeOff(user=user, department=department, reason=reason, start_date=start_date,
                         end_date=end_date, hours=hours, status=status)
         time_off.save()
+        message_type = 'success'
+        message = "You timeoff was created"
 
-    return HttpResponseRedirect(reverse('profile') + '?mt=alert&mc=' + message)
+    return HttpResponseRedirect(reverse('profile') + "?mt=%s&mc=%s" % (message_type, message))
 
+def destroy(request, id):
+    error = False
+    message = ""
+    message_type = "alert"
 
-def show(request):
-    return HttpResponse("Hello, world.")
+    user = request.user
+
+    try:
+        time_off = get_object_or_404(TimeOff, pk=id)
+    except:
+        error = True
+        message = "Data are invalid"
+
+    if time_off.user_id != user.id:
+        error = True
+        message = "This timeoff is not your"
+
+    if error == False:
+        time_off.delete()
+        message_type = 'success'
+        message = "You timeoff was deleted"
+
+    return HttpResponseRedirect(reverse('profile') + "?mt=%s&mc=%s" % (message_type, message))
 
 def profile(request):
     """View function for profile page of site."""
