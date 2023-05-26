@@ -12,26 +12,36 @@ from datetime import datetime
 def create(request):
     format = '%m/%d/%Y'
 
-    department_id = request.POST["department"]
-    reason = request.POST["reason"]
-    start_date = datetime.strptime(request.POST["start_date"], format)
-    end_date = datetime.strptime(request.POST["end_date"], format)
-    hours = (end_date - start_date).days * 8
-    status = 'requested'
+    error = False
+    message = ""
+
+    try:
+        department_id = request.POST["department"]
+        reason = request.POST["reason"]
+        start_date = datetime.strptime(request.POST["start_date"], format)
+        end_date = datetime.strptime(request.POST["end_date"], format)
+        hours = (end_date - start_date).days * 8
+        status = 'requested'
+    except:
+        error = True
+        message = "Data are invalid"    
 
     if end_date < start_date:
-        return HttpResponse("The dates are invalid.", status=400)
+        error = True
+        message = "The dates are invalid"
     
     if start_date < datetime.now():
-        return HttpResponse("The start date is invalid.", status=400)
+        error = True
+        message = "The start date is invalid"
 
-    user = request.user
-    department = get_object_or_404(Department, pk=department_id)
-    time_off = TimeOff(user=user, department=department, reason=reason, start_date=start_date,
-                       end_date=end_date, hours=hours, status=status)
-    time_off.save()
+    if error == False:
+        user = request.user
+        department = get_object_or_404(Department, pk=department_id)
+        time_off = TimeOff(user=user, department=department, reason=reason, start_date=start_date,
+                        end_date=end_date, hours=hours, status=status)
+        time_off.save()
 
-    return HttpResponseRedirect(reverse('profile'))
+    return HttpResponseRedirect(reverse('profile') + '?mt=alert&mc=' + message)
 
 
 def show(request):
@@ -39,6 +49,9 @@ def show(request):
 
 def profile(request):
     """View function for profile page of site."""
+
+    message_type = request.GET.get("mt")
+    message_content = request.GET.get("mc")
 
     departments = Department.objects.all().order_by('name')
     if request.user.is_superuser:
@@ -48,7 +61,9 @@ def profile(request):
 
     context = {
         'departments': departments,
-        'time_offs': time_offs
+        'time_offs': time_offs,
+        'message_type': message_type,
+        'message_content': message_content,
     }
 
     # Render the HTML template index.html with the data in the context variable

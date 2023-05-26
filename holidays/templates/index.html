@@ -1,7 +1,11 @@
 {% extends "base.html" %} {% block content %}
-<h1>Holiday</h1>
-<p>Vacation management can be a time-consuming and error-prone task for many businesses. Coordinating employee requests, ensuring compliance with company policies and legal requirements, and managing leave balances can all be complex and time-consuming processes. That's where our SaaS vacation management service comes in.</p>
-<p>Our service provides an easy-to-use, cloud-based platform for managing employee vacations. Employees can submit vacation requests through the platform, which can then be reviewed and approved by managers. The platform automatically tracks vacation balances and ensures compliance with company policies and legal requirements, reducing the risk of errors and simplifying the vacation management process.</p>
-<p>Our service also includes a range of features designed to make vacation management as simple and efficient as possible. For example, our platform integrates with popular calendar apps, making it easy to schedule vacations and avoid conflicts. We also provide real-time reporting and analytics, giving businesses valuable insights into vacation usage and trends.</p>
-<p>Overall, our SaaS vacation management service is a powerful tool for businesses looking to streamline and simplify their vacation management processes. By automating many of the complex and time-consuming tasks associated with vacation management, our platform can help businesses save time, reduce errors, and ensure compliance with company policies and legal requirements.</p>
+{% load static %}
+<div class="flex flex-col gap-4 mx-auto max-w-screen-md">
+    <h1 class="text-4xl">Holiday App, you place to book your holiday</h1>
+    <img src="{% static 'images/home.jpeg' %}" class="w-full">
+    <p>If you're looking to book a holiday online, there are several options available to you. Here are the steps you can follow to book your holiday online</p>
+    <p>Our service provides an easy-to-use, cloud-based platform for managing employee vacations. Employees can submit vacation requests through the platform, which can then be reviewed and approved by managers. The platform automatically tracks vacation balances and ensures compliance with company policies and legal requirements, reducing the risk of errors and simplifying the vacation management process.</p>
+    <p>Decide on your destination and dates of travel. Holiday Booking platform that includes a time-off tracking system for employees. It allows you to request vacation time, view your remaining balance, and see who else on your team has scheduled time off.</p>
+    <p>Overall, our vacation management service is a powerful tool for businesses looking to streamline and simplify their vacation management processes. By automating many of the complex and time-consuming tasks associated with vacation management, our platform can help businesses save time, reduce errors, and ensure compliance with company policies and legal requirements.</p>
+</div>
 {% endblock %}

@@ -1,5 +1,9 @@
 {% extends "base.html" %} {% block content %}
+
 <div class="px-4 py-10 sm:px-6">
+  {% if message_content is not None %}
+  <div class="mb-4 p-4 text-center rounded border {% if message_type == 'success' %}text-green-500 bg-green-100 border-green-500{% else %}text-red-500 bg-red-100 border-red-500{% endif %}">{{ message_content }}</div>
+  {% endif %}
   <div class="mb-4">
     <button
       type="button"
