@@ -9,7 +9,7 @@ Holiday Booking platform that includes a time-off tracking system for employees.
 
 # Live Site
 
-[Escape room](https://fred-escape-room-app.herokuapp.com/)
+[Hulidays](http://holidays-ocimar.herokuapp.com/)
 
 # Content
 
