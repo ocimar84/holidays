@@ -1,3 +1,4 @@
+
 # Holiday booking 
 
 If you're looking to book a holiday online, there are several options available to you. Here are the steps you can follow to book your holiday online:
@@ -5,11 +6,11 @@ Decide on your destination and dates of travel.
 Holiday Booking platform that includes a time-off tracking system for employees. It allows you to request vacation time, view your remaining balance, and see who else on your team has scheduled time off.
 
 
-![Escaperoom responsive](static/readme/escaperoom-responsive.jpg)
+![Holidays](https://ui.dev/amiresponsive?)
 
 # Live Site
 
-[Escape room](https://fred-escape-room-app.herokuapp.com/)
+[Holidays](http://holidays-ocimar.herokuapp.com/)
 
 # Content
 
@@ -138,7 +139,8 @@ I used GitHub projects board to create the user stories and keep track of my tas
 
 Here is also a screenshot overview
 
-![project board](static/readme/escaperoom-project.jpg)
+![Project](https://github.com/ocimar84/holidays/assets/79640465/e403d30a-45cc-434d-b9bd-42cfbe726837)
+
 
 ## CRUD functionality
 
