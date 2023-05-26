@@ -139,7 +139,8 @@ I used GitHub projects board to create the user stories and keep track of my tas
 
 Here is also a screenshot overview
 
-![project board](static/readme/escaperoom-project.jpg)
+![Project](https://github.com/ocimar84/holidays/assets/79640465/e403d30a-45cc-434d-b9bd-42cfbe726837)
+
 
 ## CRUD functionality
 
