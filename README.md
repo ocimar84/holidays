@@ -1,3 +1,4 @@
+
 # Holiday booking 
 
 If you're looking to book a holiday online, there are several options available to you. Here are the steps you can follow to book your holiday online:
@@ -5,11 +6,11 @@ Decide on your destination and dates of travel.
 Holiday Booking platform that includes a time-off tracking system for employees. It allows you to request vacation time, view your remaining balance, and see who else on your team has scheduled time off.
 
 
-![Escaperoom responsive](static/readme/escaperoom-responsive.jpg)
+![Holidays](https://ui.dev/amiresponsive?)
 
 # Live Site
 
-[Hulidays](http://holidays-ocimar.herokuapp.com/)
+[Holidays](http://holidays-ocimar.herokuapp.com/)
 
 # Content
 
