@@ -23,28 +23,35 @@ def create(request):
         end_date = datetime.strptime(request.POST["end_date"], format)
         hours = (end_date - start_date).days * 8
         status = 'requested'
-    except:
+    except Exception as e:
         error = True
-        message = "Data are invalid"    
+        message = "Data are invalid"
 
     if end_date < start_date:
         error = True
         message = "The dates are invalid"
-    
+
     if start_date < datetime.now():
         error = True
         message = "The start date is invalid"
 
-    if error == False:
+    if error is False:
         user = request.user
         department = get_object_or_404(Department, pk=department_id)
-        time_off = TimeOff(user=user, department=department, reason=reason, start_date=start_date,
-                        end_date=end_date, hours=hours, status=status)
+        time_off = TimeOff(
+                        user=user,
+                        department=department,
+                        reason=reason, start_date=start_date,
+                        end_date=end_date, hours=hours, status=status
+        )
         time_off.save()
         message_type = 'success'
         message = "You timeoff was created"
 
-    return HttpResponseRedirect(reverse('profile') + "?mt=%s&mc=%s" % (message_type, message))
+    return HttpResponseRedirect(
+        reverse('profile') + "?mt=%s&mc=%s" % (message_type, message)
+    )
+
 
 def destroy(request, id):
     error = False
@@ -54,8 +61,8 @@ def destroy(request, id):
     user = request.user
 
     try:
-        time_off = get_object_or_404(TimeOff, pk=id)
-    except:
+        time_off = TimeOff.objects.get(pk=id)
+    except TimeOff.DoesNotExist:
         error = True
         message = "Data are invalid"
 
@@ -63,12 +70,15 @@ def destroy(request, id):
         error = True
         message = "This timeoff is not your"
 
-    if error == False:
+    if error is False:
         time_off.delete()
         message_type = 'success'
         message = "You timeoff was deleted"
 
-    return HttpResponseRedirect(reverse('profile') + "?mt=%s&mc=%s" % (message_type, message))
+    return HttpResponseRedirect(
+        reverse('profile') + "?mt=%s&mc=%s" % (message_type, message)
+    )
+
 
 def profile(request):
     """View function for profile page of site."""
@@ -78,9 +88,12 @@ def profile(request):
 
     departments = Department.objects.all().order_by('name')
     if request.user.is_superuser:
-        time_offs = TimeOff.objects.select_related('user').filter(status__in=['requested', 'approved']).order_by('start_date')
+        time_offs = TimeOff.objects.select_related('user').filter(
+            status__in=['requested', 'approved']).order_by('start_date')
     else:
-        time_offs = TimeOff.objects.select_related('user').filter(user__exact=request.user.id, status__in=['requested', 'approved']).order_by('start_date')
+        time_offs = TimeOff.objects.select_related('user').filter(
+            user__exact=request.user.id, status__in=['requested', 'approved']
+        ).order_by('start_date')
 
     context = {
         'departments': departments,
@@ -91,6 +104,7 @@ def profile(request):
 
     # Render the HTML template index.html with the data in the context variable
     return render(request, 'profile.html', context=context)
+
 
 def index(request):
     """View function for home page of site."""
