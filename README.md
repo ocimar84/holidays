@@ -169,25 +169,21 @@ Holiday Booking data with full CRUD Functionality:
 
 ## Wireframes
 
-I built these wireframes with balsamiq to help me get a design ready for the website. The final website may look different form the inital wireframes.
+It's great that you're considering responsive design for smaller devices like tablets and mobile phones. Adapting the layout to stack the columns, providing a single-column navigation menu, and using a dropdown for smaller screens are all good practices for mobile responsiveness.
 
-It's assumed that on smaller devices such as tablets and mobile phones, multiple column presentations such as room images on the home page, room imagery and details on the rooms page, and the columns of the footer would stack to one column. Also the navbar on smaller screens will come to one and provide a dropdown.
+![image-2](https://github.com/ocimar84/holidays/assets/79640465/10a27f6a-8cdc-4cc1-97e8-8da64d8ea8e6)
 
-This is the wireframe for the homepage. It has a base navbar and footer. Includes a hero image and welcome text. Then a little picture montage of the rooms. Then an about us section
 
-![Home page wireframe](static/readme/escaperoom-homewire.jpg)
+![image-1](https://github.com/ocimar84/holidays/assets/79640465/179d51e4-81b5-4732-a585-f19746aedbb6)
 
-The room page will showcase the rooms with a nice design.
+![image](https://github.com/ocimar84/holidays/assets/79640465/b132d905-1cac-4ffb-bdfe-151b52c7fd4e)
 
-![Room page wireframe](static/readme/escaperoom-rommwire.jpg)
+![9f033a7b-b0c9-4aeb-bed8-921036e5b8b1](https://github.com/ocimar84/holidays/assets/79640465/0b419123-40db-4fa8-b114-0919d53f683a)
 
-The booking form will be simple and clean with just the key information required.
+![image-4](https://github.com/ocimar84/holidays/assets/79640465/09c30b90-d7e6-4cd3-97c4-9c2b590ec7b2)
 
-![Booking page wireframe](static/readme/escaperoom-bookwire.jpg)
+![image-3](https://github.com/ocimar84/holidays/assets/79640465/dee33e82-f441-41d7-9487-8581d03483c3)
 
-The manage booking section will have an update and cancel booking button. Making the booking managable for the users.
-
-![Manage booking wireframe](static/readme/escaperoom-bookingwire.jpg)
 
 # Features
 
