@@ -6,10 +6,13 @@ Decide on your destination and dates of travel.
 Holiday Booking platform that includes a time-off tracking system for employees. It allows you to request vacation time, view your remaining balance, and see who else on your team has scheduled time off.
 
 
-
+# 375 x 1180
 ![375x1180](https://github.com/ocimar84/holidays/assets/79640465/d8d3814d-b5eb-4534-a8cb-b1ce760cdfc9)
+# 768 x 1180
 ![768x1180](https://github.com/ocimar84/holidays/assets/79640465/4e0bd822-223a-4a64-8fc4-13e6b842679a)
+# 1024 x 1180
 ![1024x1180](https://github.com/ocimar84/holidays/assets/79640465/72adf66e-0045-44b5-8308-7112915980f4)
+# 1440 x 1180
 ![1440x1180](https://github.com/ocimar84/holidays/assets/79640465/69aab250-57fd-423f-873b-058f5a960394)
 
 
