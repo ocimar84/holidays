@@ -373,69 +373,21 @@ When running my HTML code through the [HTML Validation service](https://validato
 
 This is the home page -
 
-![HTML error index page](static/readme/escaperoom-html1.jpg)
+![HTML test ](https://github.com/ocimar84/holidays/assets/79640465/6e63ddfd-2e64-404b-8fc9-23f9cc4f50f3)
 
-Fixed
-
-![Home page fix](static/readme/html-test1.jpg)
-
-This is the rooms page -
-
-![HTML room page](static/readme/escaperoom-html2.jpg)
-
-Fixed
-
-![Room page fix](static/readme/html-test2.jpg)
-
-This is the booking page
-
-![Booking page](static/readme/html-test3.jpg)
-
-This is the account with booking page
-
-![Account with booking](static/readme/html-test4.jpg)
-
-This is the account without bookings page
-
-![Account without booking](static/readme/html-test5.jpg)
-
-This is the thank you page
-
-![Thank you](static/readme/html-test6.jpg)
-
-This is the 404 error page
-
-![404 page](static/readme/html-test7.jpg)
-
-This is the 500 error page
-
-![500 page](static/readme/html-test8.jpg)
 
 ## CSS Validator
-When running my CSS code through the [CSS Validation service](https://jigsaw.w3.org/css-validator/) I had no bugs.
+When running my CSS code through the [CSS Validation service](https://jigsaw.w3.org/css-validator/).
 
-![CSS Validate](static/readme/css-validate.jpg)
+I used django-crispy-forms to improve all my layouts, I did my best to remove the error but every time I changed something it didn't work.
+
+<img width="1408" alt="CSS test " src="https://github.com/ocimar84/holidays/assets/79640465/4f43e1a0-52eb-4ce3-8582-f8115d2bdf3b">
+
 
 ## Python Vaildator
-When running my code through the [CI Python Linter Validation](https://pep8ci.herokuapp.com/) I had no bugs or errors. Ive decided to ignore the 2 lines too long errors
+When running my code through the [CI Python Linter Validation](https://pep8ci.herokuapp.com/) 
 
-This is in my webapp - admin.py
-
-![Python screenshot](static/readme/python-1.jpg)
-
-This is in my webapp - forms.py
-
-![Python screenshot](static/readme/python-2.jpg)
-
-This is in my webapp - urls.py
-
-![Python screenshot](static/readme/python-3.jpg)
-
-This is in my webapp - views.py
-
-![Python screenshot](static/readme/python-4.jpg)
-
-![Python screenshot](static/readme/python-5.jpg)
+![Python test ](https://github.com/ocimar84/holidays/assets/79640465/9da1371c-f96e-42ba-ad96-90b54f8528fa)
 
 
 ## JSHint Validator
