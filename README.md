@@ -191,38 +191,36 @@ Sign Up to register.
 ![image](https://github.com/ocimar84/holidays/assets/79640465/7c0d46de-bdcb-4755-8076-81d1389b4d1f)
 
 ## Hero image
-The hero image is very big and prominent. It makes it obvious to the user what this webpage is about. The text in the center welcomes the user and 
-it also has a button to book, which gives the user direct access to the booking page.
+A hero image, also known as a banner image or header image, refers to a large, prominent image displayed at the top of a webpage. It typically spans the full width of the page and is designed to grab the user's attention and convey the main message or theme of the website.
 
-![Hero Image](static/readme/escaperoom-hero.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/9d64a815-cb15-4e68-a8fb-3b7f674a795c)
 
-## Most popular rooms
-In this section, it promotes the 3 most popular rooms with a small description of what the rooms are. From here the user can go to the booking page through the "book" link. 
+## Login
+A login tool, also known as a login form or login module, is a user interface component on a website or application that allows users to authenticate themselves and access restricted or personalized content. It typically consists of fields for entering a username or email and a password, along with a "Login" button. 
 
-![Most popular room section](static/readme/escaperoom-popular.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/8ff7c958-199c-407e-a45a-eccc9cf4caf3)
 
-## About us
-At the bottom of the home page the user can find an about us section. This is where the user can understand a bit more about who runs the comapny and more on what it is.
+## Add time off
+Adding a time off booking feature to a holiday website can provide users with a convenient way to request and manage their vacation time. Here are some key considerations for implementing a time off booking feature on a holiday website:
 
-![About us](static/readme/escaperoom-about.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/c28c2200-6ccd-4fe5-8711-d02ee4bdc2f5)
 
-## Footer
-The footer hold all the important information that the user will want to know about the company. This includes a Google Maps API of the location of the business so 
-the user can make a plan of how they are going to get to the location. It also tells the user the opening and closing times of the comapany so they can decided what time they would like to play. It also shows the contact information if the user needed to contact the company. 
+## Add Department
+It will add department right after the reason with the start date and end date.
 
-![Footer](static/readme/escaperoom-footer.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/5ec04b02-d9d3-4495-bbe1-bad43fe4f410)
 
-## Rooms
-This section provides the user with the information to all of the rooms. From here the user can read up about all of the rooms and see the prices, capacity and duration to make a decision on what room they want to play. Each room has a book button which will take the user straight to the booking page.
+## Reason
+Determine the reason for requesting the holiday.
 
-![Rooms](static/readme/escaperoom-rooms.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/45d36a95-5355-4578-b0cc-1107ec306aa4)
 
-## Make a booking message
-If the user isnt logged in they will be asked to either log in or create an account. They will be promted with two buttons which will take them to the allauth form they require to procede with making a booking.
+## Start and end date
+Determines the start and end date of the holiday, you cannot put the dates retroactively, before today.
 
-![Make a booking message](static/readme/escaperoom-make.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/37dd77a0-7fb3-4a13-8c35-f61db3ae8844)
 
-## Create an account 
+## ADMIN
 Here the user in prompted with 4 simple inputs to create an account. If they already have an account there is a link that will take them to the "sign in" page instead. Once the user has entered the information they can submit and they will have created an account ready to make a booking.
 
 ![create an account](static/readme/escaperoom-signup.jpg)
