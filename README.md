@@ -29,7 +29,6 @@ Holiday Booking platform that includes a time-off tracking system for employees.
     * [User stories](#user-stories)
     * [Agile Methodology](#agile-methodology)
     * [Crud Functionality](#crud-functionality)
-    * [Database Diagram](#database-diagram)
     * [Wireframes](#wireframes)
 
 * [Feautres](#features)
@@ -163,9 +162,6 @@ Holiday Booking data with full CRUD Functionality:
 
 **Delete** - Users can delete their booking from the database. This involves removing the relevant record(s) from the database and notifying the user that their booking has been cancelled.
 
-## Database diagram
-
-![Diagram](static/readme/escaperoom-diagram.jpg)
 
 ## Wireframes
 
