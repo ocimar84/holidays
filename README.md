@@ -184,12 +184,11 @@ It's great that you're considering responsive design for smaller devices like ta
 # Features
 
 ## Header
-The header is the main navigation of the site. It allows the user to access all parts of the webpage with just a single click.
-It has a nice contrasting colour between the background colour and the text colour. When the user hovers over the text, there will be a slight
-change in colour which will notify the user that it is a clickable link. The navbar has been split into two, on the left is the links to 
-access the contents of the webpage and on the right is all the user information pages.
+Header based on login and sign Up and dark mode.
+Login to enter your email and password.
+Sign Up to register.
 
-![Navigation bar](static/readme/escaperoom-header.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/7c0d46de-bdcb-4755-8076-81d1389b4d1f)
 
 ## Hero image
 The hero image is very big and prominent. It makes it obvious to the user what this webpage is about. The text in the center welcomes the user and 
