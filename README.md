@@ -248,14 +248,14 @@ Where it shows the movement of requests created by users.
 
 ## Change time off
 On this page there is all the information about the user's request:
-User - User name
-Department - Which department the applicant works in
-Holiday Start - Start date,
-Holiday end - End date.
-Hours - Amount of hours the user will spend on their holiday.
-Reason - What is the reason for requesting the holiday.
+#User - User name
+#Department - Which department the applicant works in
+#Holiday Start - Start date,
+#Holiday end - End date.
+#Hours - Amount of hours the user will spend on their holiday.
+#Reason - What is the reason for requesting the holiday.
 
-![Thanks for booking](static/readme/escaperoom-thankyou.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/e19936d8-eabc-4fbd-83bf-6d514919ff1f)
 
 ## Status
 To approve the basque holiday write something in the status the holiday will be approved.
