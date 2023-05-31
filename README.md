@@ -221,44 +221,54 @@ Determines the start and end date of the holiday, you cannot put the dates retro
 ![image](https://github.com/ocimar84/holidays/assets/79640465/37dd77a0-7fb3-4a13-8c35-f61db3ae8844)
 
 ## ADMIN
-Here the user in prompted with 4 simple inputs to create an account. If they already have an account there is a link that will take them to the "sign in" page instead. Once the user has entered the information they can submit and they will have created an account ready to make a booking.
+Django admin can manage 5 parameters:
 
-![create an account](static/readme/escaperoom-signup.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/d60829fc-0118-469b-87fd-6825909e7138)
 
-## Sign in
-Here the user in prompted with 2 simple inputs to sign in with. If they dont have an account there is a link that will take them to the "sign up" page instead. Once the user has entered the information they can sign in and they will be ready to make a booking.
+## Accounts
+Where the super user can delete registered emails
 
-![Sign In](static/readme/escaperomm-signin.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/1e1789d2-c349-46ea-acfa-8cddede04cf2)
 
-## Log out
-If the user wishes to log out they will be redirected to this page where they will be asked to confirm that they want to log out.
+## User
+Where it displays user name and email information.
 
-![Logout](static/readme/escaperoom-signout.jpg)
+![user](https://github.com/ocimar84/holidays/assets/79640465/f68bb808-2e81-49f6-aa97-eb154e2dd68a)
 
-## Place your booking
-Once the user is ready to make a booking they will be able to fill out this form. Here they will be asked for their first name, last name, email, phone number, date they would like to play, time they would like to play and which room they would like to play. The date will have a datepicker dropdown which makes it easy for the user to select their chosen date. The time will have a dropdwon for the times between 10am and 6pm to make it clear to the user that these are the times of opening. Once the user is happy they can submit their booking request.
 
-![Booking](static/readme/escaperoom-book.jpg)
+## Departmens
+Here is where the super user can create the departments that are used in the company.
 
-## Time slot unavailable message
-If the users desired booking as already been placed by someones else, this message will appear at the the top of the form. The user can then select another date or time of their choice.
+![image](https://github.com/ocimar84/holidays/assets/79640465/99d580d3-c2fc-4a52-b971-3c91d752c95a)
+
+## Time offs
+Where it shows the movement of requests created by users.
 
 ![Slot unavailable](static/readme/escaperoom-available.jpg)
 
-## Email confirmations
-When a successful booking has been placed they will be redirected to this page. They will get a thank you message and a confirmation email of the details they have choosen. The user can then access their booking from this page by clicking on the link.
+## Change time off
+On this page there is all the information about the user's request:
+User - User name
+Department - Which department the applicant works in
+Holiday Start - Start date,
+Holiday end - End date.
+Hours - Amount of hours the user will spend on their holiday.
+Reason - What is the reason for requesting the holiday.
 
 ![Thanks for booking](static/readme/escaperoom-thankyou.jpg)
 
-## Dropdown
-Once logged in the user can see they are logged in because their username will appear in the navbar. From here there will be a dropdown where the user can access their bookings from and where they can also log out from.
+## Status
+To approve the basque holiday write something in the status the holiday will be approved.
 
-![Dropdown](static/readme/escaperoom-dropdown.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/43d7ff9a-7347-46b5-a617-b49bf4ea3177)
 
-## Manage bookings
-If the user has a booking, they can view, update or delete their booking from this section. The details of their booking will be shown here alongside with two buttons. One to delete and one to update.
+## Disapproval
+To disapprove the holiday request, the super user just delete the request, so it will disappear from the history, For the future thinking about developing some other tool
 
-![Account page](static/readme/escaperoom-account.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/398a7a73-e895-4e21-a436-3ef4fe50ee12)
+
+![image](https://github.com/ocimar84/holidays/assets/79640465/bde72c00-0f12-4044-9bfb-475c59fbb62c)
+
 
 If they do not have any booking they will be shown this screen. Here there is a button they can click to take them to the booking form to make one if they want to.
 
