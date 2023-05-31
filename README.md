@@ -244,7 +244,7 @@ Here is where the super user can create the departments that are used in the com
 ## Time offs
 Where it shows the movement of requests created by users.
 
-![Slot unavailable](static/readme/escaperoom-available.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/08829025-cd54-4c84-9a40-e5ea1f8233c3)
 
 ## Change time off
 On this page there is all the information about the user's request:
