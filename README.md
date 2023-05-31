@@ -368,6 +368,11 @@ This is the home page -
 
 ![HTML test ](https://github.com/ocimar84/holidays/assets/79640465/6e63ddfd-2e64-404b-8fc9-23f9cc4f50f3)
 
+This is the main page where the user makes the request, there is an error being used in my HTML that is impossible to correct.
+
+![image](https://github.com/ocimar84/holidays/assets/79640465/685bb775-741a-4d59-9e59-32c5d988cb97)
+
+
 
 ## CSS Validator
 When running my CSS code through the [CSS Validation service](https://jigsaw.w3.org/css-validator/).
