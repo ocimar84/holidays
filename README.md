@@ -290,16 +290,13 @@ The application has been tested with Chrome Dev Tools Lighthouse Testing which t
 * SEO
 
 ### Home Page
-![Home page](static/readme/Homepage-lighthouse.jpg)
-
-### Room Page
-![Room page](static/readme/room-lighthouse.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/844af648-0374-4a63-873d-83f93d441743)
 
 ### Booking Page
-![Booking](static/readme/book-lighthouse.jpg)
+![image](https://github.com/ocimar84/holidays/assets/79640465/23dd805b-efd8-4e07-bf07-bcf576984b3f)
 
-### Account Page
-![Account](static/readme/account-lighthouse.jpg)
+### Adm Page
+![image](https://github.com/ocimar84/holidays/assets/79640465/dbba2512-4eef-4a29-9674-b71626fd0f7f)
 
 ## HTML Validator
 
