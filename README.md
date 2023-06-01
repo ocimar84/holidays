@@ -48,7 +48,6 @@ Holiday Booking platform that includes a time-off tracking system for employees.
     * [Change time off](#Change-time-off)
     * [Status](#Status)
     * [Disapproval](#Disapproval)
-    * [Admin panel](#admin-panel)
     * [404 Page](#404-page)
     * [Responsive](#responsive)
     * [Future features](#future-features)
