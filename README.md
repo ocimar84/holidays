@@ -220,6 +220,11 @@ Determines the start and end date of the holiday, you cannot put the dates retro
 
 ![image](https://github.com/ocimar84/holidays/assets/79640465/37dd77a0-7fb3-4a13-8c35-f61db3ae8844)
 
+## The start date is invalid
+When the user enters the retroactive date he receives a message saying that it is not possible to create.
+
+![image](https://github.com/ocimar84/holidays/assets/79640465/f89fdbd0-972c-4e0d-a3dc-41003b85092b)
+
 ## ADMIN
 Django admin can manage 5 parameters:
 
