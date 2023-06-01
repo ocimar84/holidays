@@ -221,7 +221,7 @@ When the user enters the retroactive date he receives a message saying that it i
 ![image](https://github.com/ocimar84/holidays/assets/79640465/f89fdbd0-972c-4e0d-a3dc-41003b85092b)
 
 ## ADMIN
-Django admin can manage 5 parameters:
+Django admin can manage 5 parameters User: ocimar / Pass: admin
 
 ![image](https://github.com/ocimar84/holidays/assets/79640465/d60829fc-0118-469b-87fd-6825909e7138)
 
