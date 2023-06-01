@@ -274,37 +274,7 @@ If they do not have any booking they will be shown this screen. Here there is a 
 
 ![no booking](static/readme/escaperoom-nobooking.jpg)
 
-## Update booking
-If the user wants to update their booking they will be taken back to the form. All of their previous information will already be here in place. The user can then update anything they need to. They will get the prompt if the slot is already taken again. Once they are happy with their new details they can submit and the changes will be shown in the manage bookings area.
 
-![Update booking](static/readme/escaperoom-updatebook.jpg)
-
-## Updated message
-Once they submit the update. This message will appear to confirm their changes and they will also get a confirmation email with their new booking.
-
-![Update message](static/readme/escaperoom-message.jpg)
-
-## Cancel confirmation
-If the user want to cancel their booking they can. Once they press the red cancel button they will be prompted by this alert. This is where they can confirm that they want to delete their booking and give double confirmation.
-
-![Cancel confirmation](static/readme/escaperoom-cancel.jpg)
-
-Once they confirm they will be shown this message and the changes will reflect in the manage bookings area.
-
-![Cancel message](static/readme/escaperoom-cancel-message.jpg)
-
-## Admin panel
-The admin can access this panel by logging in with the superuser details. They will be able to get an overview of all of the information about the website. Including the information of the users, the rooms and the bookings.
-
-![Admin panel](static/readme/escaperoom-admin.jpg)
-
-Here the admins can see the bookings that have been placed. They will see all of the important information about the booking such as time, date, name of the booker, room name and email. The admin has an option to delete bookings from the system from this panel.
-
-![Admin booking](static/readme/escaperoom-adminbooking.jpg)
-
-Here the admin can alter any of the information about the rooms including the name, price, duration, capacity, description or image. They can also add new rooms if they wish to expand of even remove rooms.
-
-![Admin rooms](static/readme/escaperoom-adminrooms.jpg)
 
 ## 404 Page
 This is the page the users will be shown if they have an incorrect url for whatever reason. they will have a link they can press to take them back to the home page.
