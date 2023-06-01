@@ -48,8 +48,6 @@ Holiday Booking platform that includes a time-off tracking system for employees.
     * [Change time off](#Change-time-off)
     * [Status](#Status)
     * [Disapproval](#Disapproval)
-    * [404 Page](#404-page)
-    * [Responsive](#responsive)
     * [Future features](#future-features)
 
 * [Testing](#testing)
@@ -273,54 +271,13 @@ To disapprove the holiday request, the super user just delete the request, so it
 
 ![image](https://github.com/ocimar84/holidays/assets/79640465/bde72c00-0f12-4044-9bfb-475c59fbb62c)
 
-
-If they do not have any booking they will be shown this screen. Here there is a button they can click to take them to the booking form to make one if they want to.
-
-![no booking](static/readme/escaperoom-nobooking.jpg)
-
-
-
-## 404 Page
-This is the page the users will be shown if they have an incorrect url for whatever reason. they will have a link they can press to take them back to the home page.
-
-![404 page](static/readme/escaperoom-404.jpg)
-
-## Responsive
-
-To prove my responsiveness of my page, I have screenshots of what the main features look like on a mobile.
-
-* Header
-    * Here the navbar links form into a dropdown making it good UX.
-
-![Header](static/readme/responsive-header.jpg)
-
-* Most popular rooms
-    * The imagery and description goes into a column order
-
-![Most popular rooms](static/readme/responsive-popular.jpg)
-
-* About us
-    * The imagery and description goes into a column order
-
-![About us](static/readme/responsive-about.jpg)
-
-* Footer
-    * It takes order in a column form
-
-![Footer](static/readme/responsive-footer.jpg)
-
-* Rooms
-    * * The imagery, description and details goes into a column order
-
-![Rooms](static/readme/responsive-room.jpg)
-
 ## Future Features
 
-* Add newsletter to send discounts and room updates
-* Have times solved for each room that is updated by each visit
-* Automate Top times for each room
-* Make emails easier to read
-* Phone numbers can accept letters however it is low level as the email is more reliable. Update to allow only numbers
+* Add a button for the user to edit the holiday date.
+* Allow the user to see why their request was denied.
+* Improve the user experience on the website.
+* Add a form if the user forgets the email receives a link with a temporary password.
+
 
 # Testing
 
