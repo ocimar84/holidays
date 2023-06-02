@@ -62,7 +62,6 @@ Holiday Booking platform that includes a time-off tracking system for employees.
 
 
 * [Credits](#credits)
-    * [Code](#code) 
     * [Images](#images)
     * [Technology used](#technology-used)
     * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
@@ -345,21 +344,12 @@ https://docs.google.com/spreadsheets/d/14IOgHDqhm2oafJCocH2HDPnnSyy-PY2jPVagz_uj
 * If a user is not logged in and tries to deduce the delete URL to delete someone else's bookings, they are redirected to a custom 500 error page. This indicates that the action is not allowed and prevents unauthorized deletion of bookings.
 
 
-# Credits
-
-## Code 
-
-* I used [this website](https://timepicker.co/?fbclid=IwAR2OiqEuDfKTM7438Gk72GFZjP0l4ze-A7aRiBSfE4FAJeH0Q8jIjk_-EcY) to make the datetime picker.
-* I used [this website](https://opensource.com/article/22/12/django-send-emails-smtp) to send emails to the users.
-* I used [this website](https://developers.google.com/maps/documentation/embed/get-api-key) to help me create the google maps API.
-* I used [this website](https://docs.djangoproject.com/en/3.2/ref/templates/builtins/#for-empty) to help me with for loops on my_booking.html
-
 ## Images
 
 I used the following website to get my free stock images from -
 
-* [Pexels](https://www.pexels.com/)
-* [Unsplash](https://unsplash.com/)
+* [Google](https://www.google.com/)
+
 
 ## Technology used
 
