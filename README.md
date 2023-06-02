@@ -69,12 +69,8 @@ Holiday Booking platform that includes a time-off tracking system for employees.
 
 * [Deployment](#deployment)
     * [Local deployment](#local-deployment)
-    * [Production Deployment](#production-deployment) 
-        * [Create heroku app](#create-heroku-app)
-        * [Connect Postgres database](#connect-postgres-database)
-        * [Deploy app on heroku](#deploy-app-on-heroku)
-        * [PostgreSql](#postgresql)
-
+    * [Credits](#Credits) 
+       
 * [Acknowledgements](#acknowledgements)
 
 # Business goals
@@ -405,52 +401,24 @@ I used the following website to get my free stock images from -
 
 ## Create a Fork
 
-* On GitHub.com, navigate to the repository.
-* In the top-right corner of the page, click Fork.
-* Select an owner for the forked repository.
-* By default, forks are named the same as their upstream repositories. You can change the name of the fork to distinguish it further.
-* Optionally, add a description of your fork.
-* Choose whether to copy only the default branch or all branches to the new fork. For many forking scenarios, such as contributing to open-source projects, you only need to copy the default branch. By default, only the default branch is copied.
-* Click Create fork.
+* Open your web browser and go to GitHub.com.
+* Navigate to the repository you want to fork.
+* On the top-right corner of the repository page, you'll find the "Fork" button. Click on it.
+* A dialog box will appear asking you to select the owner for the forked repository. Choose your own account or the organization you want to fork the repository to.
+* By default, forks are named the same as their upstream repositories. If you want, you can change the name of the fork to distinguish it further.
+* Finally, click on the "Create fork" button to initiate the forking process.
 
-## Production delpoyment 
-Escape room is deployed to Heroku, using an ElephantSQL Postgres database. To duplicate deployment to Heroku, follow these steps:
+## Credits
+* Code Institute Template
+* gitpod
+* json 
+* bootstrap
+* google forms
+* VS code
 
-After you have forked the project for your own, continue these steps as follows -
-
-* You will need a Cloudinary account to host user images and static files.
-* Login to [Cloudinary](https://cloudinary.com/).
-* Select the 'dashboard' option.
-* Copy the value of the 'API Environment variable' from the part starting cloudinary:// to the end. You may need to select the eye icon to view the full environment variable.Paste this value somewhere for safe keeping as you will need it shortly (but destroy after deployment).
-* Log in to [Heroku](https://id.heroku.com/login).
-* Select 'Create new app' from the 'New' menu at the top right.
-* Enter a name for the app and select the appropriate region.
-* Select 'Create app'.
-* Select 'Settings' from the menu at the top.
-* Login to [ElephantSQL](https://www.elephantsql.com/).
-* Click 'Create new instance' on the dashboard.
-* Name the 'plan' and select the 'Tiny Turtle (free)' plan.
-* Select 'select region'.
-* Choose the nearest data centre to your location.
-* Click 'Review'.
-* Go to the ElephantSQL dashboard and click on the 'database instance name' for this project.
-* Copy the ElephantSQL database URL to your clipboard (this starts with postgres://).
-* Return to the Heroku dashboard.
-* Select the 'settings' tab.
-* Locate the 'reveal config vars' link and select.
-* Enter the following config var names and values:
-* CLOUDINARY_URL: your cloudinary URL as obtained above
-* DATABASE_URL: your ElephantSQL postgres database URL as obtained above
-* PORT: 8000
-* SECRET_KEY: your secret key
-* Select the 'Deploy' tab at the top.
-* Select 'GitHub' and confirm you wish to deploy using GitHub. You may be asked to enter your GitHub password.
-* Find the 'Connect to GitHub' section and use the search box to locate your repo.
-* Select 'Connect' when found.
-* Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed site to be automatically redeployed every time you push changes to GitHub.
-* Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
-* Your site will shortly be deployed and you will be given a link to the deployed site when the process is complete.
 
 # Acknowledgements
 
-A huge thanks to my mentor Malia for going through my project and helping me with any issues I had to deal with.
+I would like to express my heartfelt gratitude to my brotherVitor Mateus  for his unwavering support and encouragement from him throughout the entire construction of this website. His invaluable feedback and assistance from him have been instrumental in shaping the project.
+
+I would also like to extend my sincere appreciation to my mentor Malia for his guidance and expertise. Their mentorship has been invaluable in enhancing my skills and providing valuable insights during the development process.
