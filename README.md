@@ -344,18 +344,12 @@ https://docs.google.com/spreadsheets/d/14IOgHDqhm2oafJCocH2HDPnnSyy-PY2jPVagz_uj
 
 # Security Features
 
-* Users cannot deduce the delete url and delete others bookings, they get a custom 500 error page if they do this when not logged in and a warning message if they are authenticated
+* If a logged-in user attempts to deduce the delete URL for others' bookings, they receive a warning message. This serves as a reminder that they can only delete their own bookings and discourages unauthorized actions.
+* Message failure occurs when a user tries to update a booking for a time that is already booked. This prevents double booking and ensures that each time slot is reserved for only one user.
+* Users who do not own a particular booking receive a message failure when attempting to update it. This ensures that only the rightful owner can modify their bookings.
+* The custom 500 error page is activated for various reasons, including when a user tries to delete a booking they do not own or when they attempt to access a non-existent booking. 
+* If a user is not logged in and tries to deduce the delete URL to delete someone else's bookings, they are redirected to a custom 500 error page. This indicates that the action is not allowed and prevents unauthorized deletion of bookings.
 
-* Users cannot deduce the update ulr and update others’ bookings, they get a custom 500 error page if they attempt to do this.
-
-* Booking Update: Message Failure trying to book a time already booked
-* Booking Update: Message failure if not logged in
-* Booking Update: Message failure if they dont own booking
-* Booking Cancel: Message Failure if not logged in
-* Booking Cancel: Message failure if they dont own booking
-* Place Booking: User not logged in
-* Place Booking: Time & room already booked
-* 500 Page: This can be activated for many reasons, but you are able to get there if you try to delete a booking that you don’t own, or if you try to access a booking that doesn’t exist
 
 ## User authentication
 * Django's all auth was used for login and sign up functionality.
