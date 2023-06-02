@@ -55,6 +55,7 @@ Holiday Booking platform that includes a time-off tracking system for employees.
     * [HTML Validator](#html-validator)
     * [CSS Validator](#css-validator)
     * [Python Validator](#python-validator)
+    * [JSON Validation](#json-validation)
     * [Manual](#manual)
 
 * [Security Features](#security-features)
@@ -316,6 +317,11 @@ When running my CSS code through the [CSS Validation service](https://jigsaw.w3.
 I used django-crispy-forms to improve all my layouts, I did my best to remove the error but every time I changed something it didn't work.
 
 <img width="1408" alt="CSS test " src="https://github.com/ocimar84/holidays/assets/79640465/4f43e1a0-52eb-4ce3-8582-f8115d2bdf3b">
+
+## JSON Validation
+Valid JSON
+
+![image](https://github.com/ocimar84/holidays/assets/79640465/c90c857a-e3ee-4c10-95b4-102656de846b)
 
 
 ## Python Vaildator
