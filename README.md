@@ -60,9 +60,6 @@ Holiday Booking platform that includes a time-off tracking system for employees.
 
 * [Security Features](#security-features)
 
-* [Bugs](#bugs)
-    * [Solved](#solved)
-    * [Left to solve](#left-to-solve)
 
 * [Credits](#credits)
     * [Code](#code) 
@@ -351,46 +348,6 @@ https://docs.google.com/spreadsheets/d/14IOgHDqhm2oafJCocH2HDPnnSyy-PY2jPVagz_uj
 * If a user is not logged in and tries to deduce the delete URL to delete someone else's bookings, they are redirected to a custom 500 error page. This indicates that the action is not allowed and prevents unauthorized deletion of bookings.
 
 
-## User authentication
-* Django's all auth was used for login and sign up functionality.
-* Django's superuser is used to limit access to admin panel.
-
-## Form Validation
-* Extensive form validation is used on front end as well as backend.
-
-## Database Security
-* All secret keys connecting the database are stored in a env.py file that is never pushed to github. Furthermore, Cross-Site Request Forgery (CSFR) tokens were used on all forms throughout the project.
-
-# Bugs
-
-## Solved
-
-* I had some contrasting issues which I fixed by using devtools and using their recommended colours
-
-![Contrast](static/readme/readme-contrast1.jpg)
-
-* I had two main bugs in my project. These two bugs would allow hackers to delete and update someone else's bookings. I first had to check if the user that was trying to update or cancel the booking, owned that booking. I done that through this code - 
-
-![Bug](static/readme/escaperoom-bug.jpg)
-
-* Then I had to write an if statement to allow the authenticated user to continue their action. If not they get a custom 500 error page.
-
-![500](static/readme/escaperoom-bug500.jpg)
-
-* I had an issue when refresing on thank you booking page, it sends user another email. I had my email in the wrong section of my code and was a simple fix with a quick move. 
-
-![Email code](static/readme/escaperoom-bugemail.jpg)
-
-* I also had a bug with my messages. If a user were to sign in and sign out, then sign in to another account you would get a long list of messages appear on the my bookings page.
-
-![Message bug](static/readme/escaperoom-bugmessage.jpg)
-
-* To fix this I moved my for message loop out of my_booking.html into the base.html. This meant that the message would appear one at a time instead of a build up of messages once you opened the my_booking.html.
-
-## Left to solve
-
-There are no more bugs to solve as of 18/01/2023
-
 # Credits
 
 ## Code 
@@ -409,23 +366,19 @@ I used the following website to get my free stock images from -
 
 ## Technology used
 
-* [Django](https://www.djangoproject.com/) - A model-view-template framework used to create Locksmith Booking
-* [Bootstrap](https://getbootstrap.com/) - A CSS framework used for the front end development.
-* [HTML5](https://en.wikipedia.org/wiki/HTML) - Provides the content and structure for the website.
-* [CSS3](https://en.wikipedia.org/wiki/CSS) - Provides the styling for the website.
-* [JavaScript](https://www.javascript.com/) - Provides interactive elements of the website
-* [Python](https://www.python.org/) - Provides the functionality of the website.
-* [Gitpod](https://www.gitpod.io/) - Used to create and edit the website.
-* [GitHub](https://github.com/) - Used to host the repository.
-* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to test responsiveness and debug.
-* [Am I Responsive](https://ui.dev/amiresponsive) - Used to generate mockup of my webpage.
-* [Cloudinary](https://cloudinary.com/) - Used to host all static files and images.
-* [Heroku](https://id.heroku.com/login) - Used to deploy the website.
-* [ElephantSQL](https://www.elephantsql.com/) - Used to host my database
-* [CI Python Linter](https://pep8ci.herokuapp.com/) - Used to validate Python code.
-* [HTML Validation](https://validator.w3.org/) - Used to validate HTML code.
-* [CSS Validation](https://jigsaw.w3.org/css-validator/) - Used to validate CSS code.
-* [JSHint Validation](https://jshint.com/) - Used to validate JavaScript code.
+* [Django](https://www.djangoproject.com/) - Django is a popular Python-based web framework used for building web applications. It follows the Model-View-Template (MVT) architectural pattern and provides a robust set of tools and features for rapid development.
+* [Bootstrap](https://getbootstrap.com/) - Bootstrap is a widely used CSS framework that provides a responsive grid system and pre-designed CSS components. It helps in creating a visually appealing and consistent user interface across different devices and screen sizes.
+* [HTML5](https://en.wikipedia.org/wiki/HTML) - HTML5 is the latest version of the Hypertext Markup Language, which is used to structure the content of web pages.
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - CSS3 is the latest version of Cascading Style Sheets, used for styling the visual presentation of web pages.
+* [JavaScript](https://www.javascript.com/) - JavaScript is a programming language that allows for interactive and dynamic elements on web pages. It is used to enhance the user experience and add functionality to the website.
+* [Python](https://www.python.org/) - Python is a versatile programming language used for backend development in the Locksmith Booking system. It is the primary language used by Django.
+* [Gitpod](https://www.gitpod.io/) - Gitpod is an online integrated development environment (IDE) that allows developers to write, edit, and collaborate on code in a browser-based environment.
+* [GitHub](https://github.com/) - GitHub is a web-based hosting service for version control using Git. It is commonly used for hosting and managing code repositories.
+* [Heroku](https://id.heroku.com/login) - Heroku is a cloud platform that allows developers to deploy, manage, and scale web applications. It is used to host the deployed version of the Locksmith Booking system.
+* [CI Python Linter](https://pep8ci.herokuapp.com/) - CI Python Linter is a tool used to validate Python code and ensure code quality and adherence to coding standards.
+* [HTML Validation](https://validator.w3.org/) - HTML Validation is a process of checking HTML code against standard HTML rules and specifications to ensure that it is well-formed and valid.
+* [CSS Validation](https://jigsaw.w3.org/css-validator/) - CSS Validation is the process of checking CSS code for errors, syntax issues, and adherence to CSS standards.
+* [JSHint Validation](https://jshint.com/) - JSHint is a tool used to validate JavaScript code and detect potential errors and code quality issues.
 
 # Deployment
 
