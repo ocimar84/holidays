@@ -65,6 +65,7 @@ Holiday Booking platform that includes a time-off tracking system for employees.
     * [Code](#code) 
     * [Images](#images)
     * [Technology used](#technology-used)
+    * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 * [Deployment](#deployment)
     * [Local deployment](#local-deployment)
@@ -380,26 +381,27 @@ I used the following website to get my free stock images from -
 * [CSS Validation](https://jigsaw.w3.org/css-validator/) - CSS Validation is the process of checking CSS code for errors, syntax issues, and adherence to CSS standards.
 * [JSHint Validation](https://jshint.com/) - JSHint is a tool used to validate JavaScript code and detect potential errors and code quality issues.
 
+
+## Frameworks, Libraries & Programs Used
+
+* github
+* gitpod
+* Photoshop
+* google forms
+
+
 # Deployment
 
 ## Local deployment
-To test the app locally, the terminal within VScode was used. The steps to run this:
+
 
 * Start from installing the chrome extension then clicking the green gitpod button in YOUR forked repository
 * Include the pip3 install -r requirements.txt
 * Creating env.py
-    * EMAIL_HOST_PASSWORD=<YOUR_VALUE>
-    * DEFAULT_FROM_EMAIL=<YOUR_VALUE>
-    * EMAIL_USERNAME=<YOUR_VALUE>
-    * SECRET_KEY=<YOUR_VALUE>
-    * CLOUDINARY_URL=<YOUR_VALUE>
-    * DEV=TRUE
-* Migrate so the database starts up python3 manage.py migrate
-* Create a super user so you can make the rooms in the admin and other things  python3 manage.py createsuperuser
-* Start the server python3 manage.py runserver
-* Use the website as usual.
+["DATABASE_URL"] = ''
+["SECRET_KEY"] = ''
+["SMTP_PASSWORD"] = ''
 
-A local database was used for most of the local deployment usage, since it was necessary for the automated tests to run. However, the switch to using the production database could be easily made, in case migrations needed to be performed or otherwise. Furthermore, in the development version, DEBUG was set to False, so error messages would show.
 
 ## Create a Fork
 
