@@ -384,10 +384,43 @@ I used the following website to get my free stock images from -
 * Start from installing the chrome extension then clicking the green gitpod button in YOUR forked repository
 * Include the pip3 install -r requirements.txt
 * Creating env.py
-["DATABASE_URL"] = ''
-["SECRET_KEY"] = ''
-["SMTP_PASSWORD"] = ''
+["DATABASE_URL"] = 'YOUR_VALUE'
+["SECRET_KEY"] = 'YOUR_VALUE'
+["SMTP_PASSWORD"] = 'YOUR_VALUE'
 
+## Heroku
+
+
+![Captura de Tela 2023-06-03 às 12 28 26](https://github.com/ocimar84/holidays/assets/79640465/4d8d933b-b5cc-4713-8c42-8b3e10167dab)
+
+* In the 'Config Vars' section, you can add environment variables that your deployed app will use. These variables typically include sensitive information such as database credentials or API keys. To add the necessary variables for your app deployment, follow these steps:
+
+* Open your Heroku dashboard and select your app.
+
+Navigate to the 'Settings' tab.
+
+* Scroll down to the 'Config Vars' section.
+
+* Click on the 'Reveal Config Vars' button to reveal the current variables or create new ones.
+
+* Add the necessary environment variables for your app. Each variable should have a key-value pair, where the key represents the variable name and the value is the actual value you want to assign to it.
+
+* For example, if you need to set a variable named DATABASE_URL with the corresponding database URL value, click on the 'Add' button and enter DATABASE_URL as the key and the actual database URL as the value.
+
+* Continue adding all the required environment variables for your app.
+
+* Once you have added all the necessary variables, click on the 'Save' button to save the changes.
+
+* Open the Gitpod terminal in your project.
+
+* Log in to your Heroku account by entering the following command and providing your Heroku credentials.
+
+* Once authenticated, set the remote repository for Heroku by entering the following command, replacing {app_name} with the name given to your app on Heroku.
+* Make sure all the necessary changes in your code are added and committed. If you have any pending changes, use the following commands to add and commit your changes.
+* Push your changes to both GitHub and Heroku by entering the following commands.
+* The first command git push origin main pushes your changes to the GitHub repository, and the second command git push heroku main deploys the app to Heroku.
+* Once the deployment process starts, you can monitor the deployment logs by going back to the App page on Heroku and clicking on "More" in the top right corner. This will provide you with information about the deployment progress and any potential errors.
+* Once the deployment is finished successfully, you should be able to see your deployed site by clicking on "Open app" in the top right corner of the Heroku app page.
 
 ## Create a Fork
 
@@ -409,6 +442,6 @@ I used the following website to get my free stock images from -
 
 # Acknowledgements
 
-I would like to express my heartfelt gratitude to my brotherVitor Mateus  for his unwavering support and encouragement from him throughout the entire construction of this website. His invaluable feedback and assistance from him have been instrumental in shaping the project.
+I would like to express my heartfelt gratitude to my brother Vitor Mateus for his unwavering support and encouragement from him throughout the entire construction of this website. His invaluable feedback and assistance from him have been instrumental in shaping the project.
 
 I would also like to extend my sincere appreciation to my mentor Malia for his guidance and expertise. Their mentorship has been invaluable in enhancing my skills and providing valuable insights during the development process.
