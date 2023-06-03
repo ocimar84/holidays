@@ -182,6 +182,10 @@ Sign Up to register.
 ## Hero image
 A hero image, also known as a banner image or header image, refers to a large, prominent image displayed at the top of a webpage. It typically spans the full width of the page and is designed to grab the user's attention and convey the main message or theme of the website.
 
+
+https://github.com/ocimar84/holidays/assets/79640465/bb5b257f-b76b-4040-8e96-cb550a0a1100
+
+
 ![image](https://github.com/ocimar84/holidays/assets/79640465/9d64a815-cb15-4e68-a8fb-3b7f674a795c)
 
 ## Login
@@ -191,6 +195,10 @@ A login tool, also known as a login form or login module, is a user interface co
 
 ## Add time off
 Adding a time off booking feature to a holiday website can provide users with a convenient way to request and manage their vacation time. Here are some key considerations for implementing a time off booking feature on a holiday website:
+
+
+https://github.com/ocimar84/holidays/assets/79640465/3aad89a3-d57e-475f-be88-7eed2e49a2e2
+
 
 ![image](https://github.com/ocimar84/holidays/assets/79640465/c28c2200-6ccd-4fe5-8711-d02ee4bdc2f5)
 
@@ -219,6 +227,10 @@ Django admin can manage 5 parameters User: ocimar / Pass: admin
 
 ![image](https://github.com/ocimar84/holidays/assets/79640465/d60829fc-0118-469b-87fd-6825909e7138)
 
+
+https://github.com/ocimar84/holidays/assets/79640465/c24f471c-cdce-4a1b-b5ad-6a3861417335
+
+
 ## Accounts
 Where the super user can delete registered emails
 
@@ -228,6 +240,13 @@ Where the super user can delete registered emails
 Where it displays user name and email information.
 
 ![user](https://github.com/ocimar84/holidays/assets/79640465/f68bb808-2e81-49f6-aa97-eb154e2dd68a)
+
+## Nightmode
+
+
+Implementing a night mode feature on a website involves modifying the website's CSS (Cascading Style Sheets) to change the color scheme and adjust other visual elements. Here are the general steps to create a night mode feature.
+
+https://github.com/ocimar84/holidays/assets/79640465/555cf491-1c13-4a7d-bb3b-e699e9b4a02e
 
 
 ## Departmens
