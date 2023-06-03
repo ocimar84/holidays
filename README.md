@@ -225,7 +225,8 @@ When the user enters the retroactive date he receives a message saying that it i
 ## ADMIN
 Django admin can manage 5 parameters User: ocimar / Pass: admin
 
-![image](https://github.com/ocimar84/holidays/assets/79640465/d60829fc-0118-469b-87fd-6825909e7138)
+![django](https://github.com/ocimar84/holidays/assets/79640465/9773651e-84ff-4727-9f07-59d6dcfc366d)
+
 
 
 https://github.com/ocimar84/holidays/assets/79640465/c24f471c-cdce-4a1b-b5ad-6a3861417335
